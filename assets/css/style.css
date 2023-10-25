@@ -6,7 +6,7 @@ body {
     background-size: cover;
     height: 100vh;
     font-family: "arimo", "san-serif";
-    color: white;
+    color: black;
 }
 
 h1,h2 {
@@ -22,4 +22,8 @@ main {
     margin-top: 47px;
     display: flex;
     flex-direction: column;
+}
+
+.quiz {
+    background-color: white;
 }
