@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400&family=Teko:wght@400;500;600&display=swap');
+
+
 body {
     background: url(../images/background-prem.jpg)no-repeat top center;
     background-size: cover;
     height: 100vh;
+    font-family: "arimo", "san-serif";
+    color: white;
+}
+
+h1,h2 {
+    font-family: "teko", "san-serif";
+    text-decoration: solid;
+    letter-spacing: 2px;
+    color: white;
+
+}
+
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
