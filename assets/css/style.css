@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;1,400&family=Teko:wght@400;500;600&display=swap');
 
-
+/* Generic styling */
 body {
     background: url(../images/background-prem.jpg)no-repeat top center;
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     font-family: "arimo", "san-serif";
     color: black;
 }
@@ -16,7 +16,7 @@ h1,h2 {
     color: white;
 
 }
-
+/* Push footer to bottom of the page credited to Love running walkthrough project */
 main {
     flex: 1 0 auto;
     margin-top: 47px;
@@ -24,3 +24,29 @@ main {
     flex-direction: column;
 }
 
+/* Quiz styles */
+
+.quiz {
+    padding: 1px;
+    background-color: navajowhite;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#intro-buttons {
+    padding: 20px;
+    border-radius: 10%;
+}
+
+#intro-button , .btn {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */ 
+
+footer a {
+    text-decoration: none;
+    
+}

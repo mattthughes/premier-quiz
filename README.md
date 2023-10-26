@@ -57,7 +57,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
     - [Media](#media)
       - [Imagery](#imagery)
       - [Code](#code)
-    - [Content](#content)
+      - [Content](#content)
     - [Acknowledgements](#acknowledgements)
 
 
@@ -88,6 +88,8 @@ Premier League greatest facts is a quiz designed around the best league in the w
 * Complete contact form to highlight any queries or request new questions.
 
 ### Future Implementations
+
+
 
 ## Design
 
@@ -211,7 +213,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Code
 
-### Content
+#### Content
 
 ### Acknowledgements 
 
