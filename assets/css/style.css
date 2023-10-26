@@ -45,6 +45,25 @@ main {
     border: 4px solid gray;
 }
 
+.quiz-color {
+    background-color: #FFDEAD;
+}
+
+.show {
+    display:block;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
 /* Footer styles */ 
 
 footer a {

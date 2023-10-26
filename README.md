@@ -53,6 +53,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [How to Fork](#how-to-fork)
       - [How to clone](#how-to-clone)
   - [Testing](#testing)
+    - [Solved Bugs](#solved-bugs)
   - [Credits](#credits)
     - [Media](#media)
       - [Imagery](#imagery)
@@ -204,6 +205,10 @@ Premier League greatest facts is a quiz designed around the best league in the w
 #### How to clone
 
 ## Testing
+
+### Solved Bugs
+
+* Fixed the class add issue to fix this I created a second function called hideElements and added the hide class from the css and then removed this and added the show class to change the element display from none to block
 
 ## Credits 
 
