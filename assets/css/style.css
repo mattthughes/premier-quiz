@@ -13,7 +13,7 @@ h1,h2 {
     font-family: "teko", "san-serif";
     text-decoration: solid;
     letter-spacing: 2px;
-    color: white;
+    color: #04A777;
 
 }
 /* Push footer to bottom of the page credited to Love running walkthrough project */
@@ -42,6 +42,7 @@ main {
 #intro-button , .btn {
     width: 90%;
     margin-bottom: 10px;
+    border: 4px solid gray;
 }
 
 /* Footer styles */ 

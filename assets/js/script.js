@@ -110,7 +110,42 @@ const questions = [
     }
 
 ];
-
+// Get the document html elements //
 let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
 let nextButton = document.getElementById('next-button');
+let instructionsButton = document.getElementById('instructions-btn');
+let startButton = document.getElementById('start-btn');
+
+// Initalise the Quiz //
+
+let score = 0;
+let question = 0;
+let answer = 0;
+
+
+function showInstructions() {
+    instructionsButton.innerHTML = `<section class="instructions">
+    <div class="instructions-text">
+    <h2>Premier League Greatest Facts Instructions</h2>
+    <p>Welcome to the Premier League Greatest Facts quiz, 
+    if you are new to sports quizzes or a quiz veteran we are happy to have you, 
+    for all our new players out there this quiz is very simple, just follow these easy steps.</p>
+    <br>
+    <p>Step 1: Click the start quiz button below.</p>
+    <br>
+    <p>Step 2: Read the question and select one of the four answers</p>
+    <br>
+    <p>Step 3: Press the next button and answer all 10 questions to find out your results.</p>
+    <br>
+    <p>If you would like to take some extra time with certain questions
+     you can simply do that by pressing the next button, if you would like to answer this question again later,
+     you can do this easily by pressing the Prev button which stands for previous. </p>
+    <br>
+    <p>We hope you now feel ready to take part in this fun quiz, How well do you really know the Premier League?</p>
+    <button class="start-btn >Start Quiz</button>
+    </div>
+    </section>`;
+    $(".quiz-intro").html(instructionsButton);
+    
+}
