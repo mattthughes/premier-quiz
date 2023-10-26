@@ -42,7 +42,7 @@ const questions = [
             { text: "Sergio Aguero", correct: false },
         ]
     },
-    
+
     {
         question: "How many points did Derby County score in the 2007/2008 season?",
 
@@ -107,12 +107,10 @@ const questions = [
             { text: "Blackpool", correct: false },
             { text: "Hull City", correct: true },
         ]
-    },
-
-    
-
-    
-
-
+    }
 
 ];
+
+let questionElement = document.getElementById('questions');
+let answerButtons = document.getElementById('answer-buttons');
+let nextButton = document.getElementById('next-button');
