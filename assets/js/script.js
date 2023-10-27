@@ -114,6 +114,7 @@ const questions = [
 let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
 let quizIntro = document.getElementById('quiz-intro');
+let quizElement = document.getElementById('quiz');
 let nextButton = document.getElementById('next-button');
 let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
@@ -143,13 +144,12 @@ function hideElements() {
 
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
-    startButton.classList.add('hide');
+    quizElement.classList.add('hide');
 }
 
 function showInstructions() {
     instructionsTextElement.classList.remove('hide');
-    instructionsTextElement.classList.add('show', 'quiz-color');
-    
+    instructionsTextElement.classList.add('show', 'quiz-instructions');
     hideElements();
 
 }

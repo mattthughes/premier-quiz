@@ -4,32 +4,36 @@
 body {
     background: url(../images/background-prem.jpg)no-repeat top center;
     background-size: cover;
-    height: 110vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
     font-family: "arimo", "san-serif";
     color: black;
 }
 
-h1,h2 {
+h1,
+h2 {
     font-family: "teko", "san-serif";
     text-decoration: solid;
     letter-spacing: 2px;
     color: #04A777;
 
 }
-/* Push footer to bottom of the page credited to Love running walkthrough project */
+
+
 main {
     flex: 1 0 auto;
     margin-top: 47px;
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
+    
 }
 
 /* Quiz styles */
 
 .quiz {
-    padding: 1px;
+    padding: 5px;
     background-color: navajowhite;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -39,18 +43,28 @@ main {
     border-radius: 10%;
 }
 
-#intro-button , .btn {
+#start-btn {
     width: 90%;
     margin-bottom: 10px;
     border: 4px solid gray;
 }
 
-.quiz-color {
-    background-color: #FFDEAD;
+#instructions-btn {
+    width: 90%;
+    margin-bottom: 10px;
+    border: 4px solid gray;
 }
 
+
+.quiz-instructions {
+    background-color: #FFDEAD;
+    padding: 10px;
+    margin: 10px;
+}
+
+
 .show {
-    display:block;
+    display: block;
 }
 
 .hide {
@@ -58,15 +72,16 @@ main {
 }
 
 
+/* Footer styles */
 
-
-
-
-
-
-/* Footer styles */ 
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    
+}
 
 footer a {
     text-decoration: none;
-    
+
 }
