@@ -128,11 +128,13 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ### Instructions
 
-* This element will be generated when clicking on the instructions button this will be done by using innerHtml and the button event listener this will allow users to understand what they need to do before starting the quiz welcoming new users not detering them.
+* This element will be generated when clicking on the instructions button this will be done by using the class list to add class and the remove class by using two functions to trigger the hide and show elements. Allowing the user to view the insturctions first will allow users to understand what they need to do before starting the quiz welcoming new users not detering them.
 
 #### Instructions Mobile view 
 
-![Mobile view instructions]()
+![Mobile view instructions button](../premier-quiz/docs/wireframes/instructions-button-mobile.png)
+
+![Mobile view instructions](../premier-quiz/docs/wireframes/instructions-text-mobile.png)
 
 #### Instructions Desktop view
 
@@ -176,11 +178,15 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ### Contact page
 
+* This element wil be shown to users if they get every question correct, this contact page will allow the user via a drop down to select there favourite team enter there email and first and surname as well once submitting this form it will load an extra page thanking the user for there participation in the quiz, while also entering them into a raffel for a chance to visit a live Premier league game of there choosing.
+
 #### Mobile view contact page
 
 #### Desktop view contact page 
 
 ### Error 404 page
+
+* This will be an extra page with the same style as the rest of the quiz, this page will only be used if the page does not exist, git hub will find this page instead of the standard page created by git hub themselves
 
 #### Mobile view error page view
 
@@ -208,7 +214,10 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ### Solved Bugs
 
-* Fixed the class add issue to fix this I created a second function called hideElements and added the hide class from the css and then removed this and added the show class to change the element display from none to block
+* Fixed the class add issue, to fix this I created a second function called hideElements and added the hide class from the css and then added the class list add class to the show instructions function which was labelled as show changing the element from display none to display block to show the instructions.
+* Fixed the issue where the footer would not stick to the bottom of the page, in order to fix this I changed the values min-height and added display flex and flex direction elements, this adjusted the main content to take up all the extra space, I also added the flex-grow property to make sure this was consistent on all screen sizes, I then added the margin-top auto style to make sure the footer stayed at the bottom of the page.
+- There was an issue where the background Image would show unnessary white space when clicking the instructions button. In order to fix this I adjusted the larger padding and margin values on the instrutions window, doing this along with the fixed footer bug fix solved this issue.
+- Button Elements were not centering on Tablets and Desktop screen sizes in order to fix this I added the property display flex, flex-direction column to the parent element and then used the align self element on the start and instructions button, aligning them to the center which fixed this issue.
 
 ## Credits 
 

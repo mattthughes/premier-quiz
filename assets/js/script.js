@@ -153,3 +153,14 @@ function showInstructions() {
     hideElements();
 
 }
+
+function runGame() {
+    questionElement.classList.remove('hide');
+    questionElement.classList.add('show');
+
+    instructionsTextElement.classList.remove('show');
+    hideElements();
+
+    answerButtons.classList.remove('hide');
+    answerButtons.classList.add('show');
+}
