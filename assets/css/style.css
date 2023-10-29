@@ -90,6 +90,7 @@ footer a {
 @media screen and (min-width: 768px) {
     .quiz {
         height: 25vh;
+        margin: 20px;
         
     }
 
@@ -129,8 +130,18 @@ footer a {
         margin-bottom: 20px;
         margin-left: 10rem;
     }
+}
 
+@media screen and (min-width: 1200px) {
 
+    
+    .quiz {
+        font-size: 20px;
+    }
 
+    #quiz-intro p {
+        font-size: 25px;
+    }
 
+    
 }

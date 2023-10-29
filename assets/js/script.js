@@ -151,7 +151,6 @@ function showInstructions() {
     instructionsTextElement.classList.remove('hide');
     instructionsTextElement.classList.add('show', 'quiz-instructions');
     hideElements();
-
 }
 
 function runGame() {
@@ -160,7 +159,10 @@ function runGame() {
 
     instructionsTextElement.classList.remove('show');
     hideElements();
+    hideInstructions();
+
 
     answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
+
 }
