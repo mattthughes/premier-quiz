@@ -26,7 +26,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
     flex-grow: 1;
-    
+
 }
 
 /* Quiz styles */
@@ -44,13 +44,13 @@ main {
 }
 
 #start-btn {
-    width: 100%;
+    width: fit-content;
     margin-bottom: 10px;
     border: 4px solid gray;
 }
 
 #instructions-btn {
-    width: 100%;
+    width: fit-content;
     margin-bottom: 10px;
     border: 4px solid gray;
 }
@@ -64,8 +64,10 @@ main {
 }
 
 
+
 .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .hide {
@@ -79,7 +81,7 @@ footer {
     margin-top: auto;
     width: 100%;
     text-align: center;
-    
+
 }
 
 footer a {
@@ -89,9 +91,9 @@ footer a {
 
 @media screen and (min-width: 768px) {
     .quiz {
-        height: 25vh;
+        height: 30vh;
         margin: 20px;
-        
+
     }
 
     #quiz-intro p {
@@ -106,35 +108,42 @@ footer a {
     #intro-buttons {
         display: flex;
         flex-direction: column;
-        
+
 
     }
 
     #start-btn {
-        width: 50%;
+        
         align-self: center;
         margin-bottom: 20px;
+        font-size: 100%;
+        padding: 10px;
         
-
+        
     }
 
     #instructions-btn {
-        width: 50%;
+        
         align-self: center;
         margin-bottom: 20px;
-
+        font-size: 100%;
+        padding: 10px;
     }
 
-    .start-btn {
-        width: 50%;
-        margin-bottom: 20px;
-        margin-left: 10rem;
+
+    .instructions-text {
+        margin-right: 20px;
     }
+
 }
 
 @media screen and (min-width: 1200px) {
 
-    
+    h1 {
+        font-size: 30px;
+    }
+
+
     .quiz {
         font-size: 20px;
     }
@@ -144,4 +153,6 @@ footer a {
     }
 
     
+
+
 }
