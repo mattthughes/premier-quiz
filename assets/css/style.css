@@ -63,7 +63,24 @@ main {
     margin-top: -3rem;
 }
 
+#game-area {
+    background-color: #FFDEAD;
 
+}
+
+#questions {
+    text-align: center;
+}
+
+#answer-buttons button {
+    padding-bottom: 10px;
+    margin: 10px 5px 10px 5px;
+}
+
+#next-button button {
+    position: relative;
+    left: 42%;
+}
 
 .show {
     display: flex;
@@ -135,6 +152,35 @@ footer a {
         margin-right: 20px;
     }
 
+    #game-area {
+        position: absolute;
+        left: 5%;
+        width: 90vw;
+        height: 40vh;
+    }
+
+    #questions {
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    #answer-buttons button {
+        margin: 20px 5px 10px 5px;
+        font-size: 100%;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    #next-button button {
+        font-size: 130%;
+        position: relative;
+        left: 47%;
+        top: 1rem;
+        font-size: 20px;
+        
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -151,6 +197,16 @@ footer a {
     #quiz-intro p {
         font-size: 25px;
     }
+
+    .game-area {
+        height: 45vh;
+        
+    }
+
+    #next-button button {
+        left: 48%;
+    }
+
 
     
 

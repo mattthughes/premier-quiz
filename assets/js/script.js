@@ -119,6 +119,7 @@ let nextButton = document.getElementById('next-button');
 let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let startButton = document.getElementById('start-btn');
+let gameArea = document.getElementById('game-area')
 
 
 // Initalise the Quiz //
@@ -132,6 +133,7 @@ hideAnswers();
 
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
+    gameArea.classList.add('hide');
 }
 
 function hideAnswers() {
@@ -145,6 +147,7 @@ function hideElements() {
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
     quizElement.classList.add('hide');
+    
 }
 
 function showInstructions() {
@@ -164,5 +167,11 @@ function runGame() {
 
     answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
+
+    nextButton.classList.remove('hide')
+    nextButton.classList.add('add')
+
+    gameArea.classList.remove('hide')
+    gameArea.classList.add('show')
 
 }
