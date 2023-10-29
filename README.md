@@ -219,6 +219,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - There was an issue where the background Image would show unnessary white space when clicking the instructions button. In order to fix this I adjusted the larger padding and margin values on the instrutions window, doing this along with the fixed footer bug fix solved this issue.
 - Button Elements were not centering on Tablets and Desktop screen sizes in order to fix this I added the property display flex, flex-direction column to the parent element and then used the align self element on the start and instructions button, aligning them to the center which fixed this issue.
 - Fixed a bug where the instructions were visible after pressing the start button while viewing the instructions, in order to fix this I added the hide instructions function to the run game function which fixed this issue.
+- Solved bugs with the quiz background this was not displaying correctly because of the height vh value removed the height value to fix this issue.
 
 ## Credits 
 

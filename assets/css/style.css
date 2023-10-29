@@ -80,6 +80,7 @@ main {
 #next-button button {
     position: relative;
     left: 42%;
+    margin-bottom: 20px;
 }
 
 .show {
@@ -106,9 +107,21 @@ footer a {
 
 }
 
+@media screen and (min-width: 600px) {
+
+    #game-area {
+        width: 680px;
+        margin-left: 10px;
+    }
+
+    #next-button button {
+        left: 46%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .quiz {
-        height: 30vh;
+
         margin: 20px;
 
     }
@@ -130,17 +143,17 @@ footer a {
     }
 
     #start-btn {
-        
+
         align-self: center;
         margin-bottom: 20px;
         font-size: 100%;
         padding: 10px;
-        
-        
+
+
     }
 
     #instructions-btn {
-        
+
         align-self: center;
         margin-bottom: 20px;
         font-size: 100%;
@@ -153,10 +166,10 @@ footer a {
     }
 
     #game-area {
-        position: absolute;
+        position: relative;
         left: 5%;
         width: 90vw;
-        height: 40vh;
+
     }
 
     #questions {
@@ -174,11 +187,10 @@ footer a {
 
     #next-button button {
         font-size: 130%;
-        position: relative;
-        left: 47%;
-        top: 1rem;
+        margin-left: 0px;
+        margin-bottom: 20px;
         font-size: 20px;
-        
+
     }
 
 }
@@ -199,16 +211,12 @@ footer a {
     }
 
     .game-area {
-        height: 45vh;
-        
+        height: 55vh;
+
     }
 
     #next-button button {
-        left: 48%;
+        margin-left: 20px;
     }
-
-
-    
-
 
 }
