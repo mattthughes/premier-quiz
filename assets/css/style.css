@@ -83,6 +83,14 @@ main {
     margin-bottom: 20px;
 }
 
+.incorrect {
+    background-color: red;
+}
+
+.correct {
+    background-color: #04A777;
+}
+
 .show {
     display: flex;
     flex-direction: column;

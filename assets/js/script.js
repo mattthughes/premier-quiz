@@ -166,7 +166,7 @@ function runGame() {
     hideInstructions();
 
 
-    
+    answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
 
     nextButton.classList.remove('hide')
@@ -187,6 +187,7 @@ function startQuiz () {
 }
 
 function showQuestions () {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNum + "." + currentQuestion.question;
@@ -195,6 +196,33 @@ function showQuestions () {
         button.innerHTML = answers.text;
         button.classList.add('btn');
         answerButtons.appendChild(button);
+
+        if (answerButtons.correct) {
+            button.dataset.correct = answers.correct;    
+        } 
+
+        button.addEventListener("click" , selectAnswer);
     });
+
+}
+
+function selectAnswer(e) {
+    const selectButton = e.target;
+    const isCorrect = selectButton.dataset.correct === 'true';
+
+    if (isCorrect) {
+        selectButton.classList.add('correct');
+    } else {
+        selectButton.classList.add('incorrect');
+    }
+
+}
+
+
+function resetState () {
+    nextButton.style.display = 'none';
+    while(answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild)
+    }
 
 }
