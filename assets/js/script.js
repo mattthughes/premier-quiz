@@ -2,7 +2,7 @@ const questions = [
     {
         question: "Who scored the first goal in the Premier League?",
 
-        Answers: [
+        answers: [
             { text: "Brian Deane", correct: true },
             { text: "Gary Lineker", correct: false },
             { text: "Alan Shearer", correct: false },
@@ -13,7 +13,7 @@ const questions = [
     {
         question: "What team has not been relegated from the Premier League?",
 
-        Answers: [
+        answers: [
             { text: "Newcastle United", correct: false },
             { text: "Aston Villa", correct: false },
             { text: "Arsenal FC", correct: true },
@@ -24,7 +24,7 @@ const questions = [
     {
         question: "How many Premier League titles have Manchester United won?",
 
-        Answers: [
+        answers: [
             { text: "11", correct: false },
             { text: "14", correct: false },
             { text: "20", correct: false },
@@ -35,7 +35,7 @@ const questions = [
     {
         question: "Who is the Premier League record goal scorer?",
 
-        Answers: [
+        answers: [
             { text: "Wayne Rooney", correct: false },
             { text: "Theirry Henry", correct: false },
             { text: "Alan Shearer", correct: true },
@@ -46,7 +46,7 @@ const questions = [
     {
         question: "How many points did Derby County score in the 2007/2008 season?",
 
-        Answers: [
+        answers: [
             { text: "13", correct: false },
             { text: "11", correct: true },
             { text: "9", correct: false },
@@ -57,7 +57,7 @@ const questions = [
     {
         question: "Who was the first goalkeeper to score a goal?",
 
-        Answers: [
+        answers: [
             { text: "Paul Robinson", correct: false },
             { text: "Alison", correct: false },
             { text: "Peter Schmeichel", correct: true },
@@ -68,7 +68,7 @@ const questions = [
     {
         question: "Who has missed the most penalties in the Premier League?",
 
-        Answers: [
+        answers: [
             { text: "Frank Lampard", correct: false },
             { text: "Wayne Rooney", correct: false },
             { text: "Steven Gerrard", correct: false },
@@ -79,7 +79,7 @@ const questions = [
     {
         question: "Who is the player with the most Substitutions in Premier League history?",
 
-        Answers: [
+        answers: [
             { text: "Peter Crouch", correct: false },
             { text: "Shane Long", correct: false },
             { text: "James Milner", correct: true },
@@ -90,7 +90,7 @@ const questions = [
     {
         question: "Which goalkeeper has kept the most clean sheets in Premier League history?",
 
-        Answers: [
+        answers: [
             { text: "Petr Cech", correct: true },
             { text: "Mark Schwarzer", correct: false },
             { text: "Peter Schmeichel", correct: false },
@@ -101,7 +101,7 @@ const questions = [
     {
         question: "Which team did not win an away game in a single Premier League season",
 
-        Answers: [
+        answers: [
             { text: "Stoke City", correct: false },
             { text: "QPR", correct: false },
             { text: "Blackpool", correct: false },
@@ -127,6 +127,7 @@ let gameArea = document.getElementById('game-area')
 let score = 0;
 let question = 0;
 let answer = 0;
+let currentQuestionIndex = 0;
 
 hideInstructions();
 hideAnswers();
@@ -165,7 +166,7 @@ function runGame() {
     hideInstructions();
 
 
-    answerButtons.classList.remove('hide');
+    
     answerButtons.classList.add('show');
 
     nextButton.classList.remove('hide')
@@ -173,5 +174,27 @@ function runGame() {
 
     gameArea.classList.remove('hide')
     gameArea.classList.add('show')
+
+    startQuiz();
+
+}
+
+function startQuiz () {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestions();
+}
+
+function showQuestions () {
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNum = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNum + "." + currentQuestion.question;
+    currentQuestion.answers.forEach(answers => {
+        const button = document.createElement('button');
+        button.innerHTML = answers.text;
+        button.classList.add('btn');
+        answerButtons.appendChild(button);
+    });
 
 }
