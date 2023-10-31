@@ -222,6 +222,8 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - Solved bugs with the quiz background this was not displaying correctly because of the height vh value removed the height value to fix this issue.
 - Solved issue where there was a type error regarding the keyword question stating the value was undefined and was also trying to be used before initialisation in order to fix this initalised value outside the function declaration.
 - Fixed the bug regarding duplicate answers from the runGame function in order to fix this I added a reset state function which hid the next button and used a while loop to remove the first child when it was active in the while loop.
+- Fixed bug with answers not being answered correctly by changing answers.iscorrect to answers.correct which ended up the questions showing correctly.
+- Fixed a bug where the questions were being repeated added new function show results with the reset state function included in this function.
 
 ## Credits 
 

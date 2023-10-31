@@ -132,13 +132,22 @@ function showNextQuestion () {
 
 function showResults () {
     resetState();
-    resultScreen.classList.remove('hide')
-    resultScreen.classList.add('show')
+    if (score < 3)  {
+        `Good effort you scored ${score} out of ${questions} Press play again to try again!`
+        nextButton.innerText = 'Play Again';
+    }
+     else if (score < 6) {
+        `You know alot about the Premier league you scored ${score} out of ${questions} Press play again to try again!`
+        nextButton.innerText = 'Play Again';
+    } else if (score >= questions.length) {
+        `You scored ${score} out of ${questions} Congratulations you got every question correct press the next button to enter the raffle!`
+        nextButton.style.display = 'block';
 
-    playAgain.classList.remove('hide')
-    playAgain.classList.add('show')
-
-    playAgain.addEventListener('click', startQuiz);
+        nextButton.addEventListener('click', joinRaffle);
+    } else {
+        `You scored ${score} out of ${questions} Dont give up Pless play again to try again!`
+        nextButton.innerText = 'Play Again';
+        }
 }
 
 function resetState() {
