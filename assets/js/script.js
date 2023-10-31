@@ -79,14 +79,14 @@ function showQuestions() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNum + "." + currentQuestion.question;
+    questionElement.innerText = questionNum + "." + currentQuestion.question;
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement('button');
-        button.innerHTML = answers.text;
-        button.classList.add('btn');
+        button.innerText = answers.text;
+        button.classList.add('answer-buttons');
         answerButtons.appendChild(button);
 
-        if (answers.isCorrect) {
+        if (answers.correct) {
             button.dataset.correct = answers.correct;
         }
 
@@ -96,20 +96,50 @@ function showQuestions() {
 
 }
 
-function selectAnswer(e) {
-    const selectButton = e.target;
+function selectAnswer(event) {
+    const selectButton = event.target;
     const isCorrect = selectButton.dataset.correct === "true";
 
     if (isCorrect) {
         selectButton.classList.add("correct");
     } else {
         selectButton.classList.add("incorrect");
+    
     }
 
+    nextButton.style.display = 'block'
 
+    nextButton.addEventListener("click", () =>{
+
+        if (currentQuestionIndex < questions.length){
+            showNextQuestion();
+        } else {
+            startQuiz();
+        }
+
+    })
 
 }
 
+function showNextQuestion () {
+    currentQuestionIndex ++;
+    if (currentQuestionIndex < questions.length){
+        showQuestions();
+    } else {
+        showResults();
+    }
+}
+
+function showResults () {
+    resetState();
+    resultScreen.classList.remove('hide')
+    resultScreen.classList.add('show')
+
+    playAgain.classList.remove('hide')
+    playAgain.classList.add('show')
+
+    playAgain.addEventListener('click', startQuiz);
+}
 
 function resetState() {
     nextButton.style.display = 'none';
