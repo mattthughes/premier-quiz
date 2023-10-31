@@ -132,9 +132,9 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Instructions Mobile view 
 
-![Mobile view instructions button](../premier-quiz/docs/wireframes/instructions-button-mobile.png)
+![Mobile view instructions button](docs/wireframes/instructions-button-mobile.png)
 
-![Mobile view instructions](../premier-quiz/docs/wireframes/instructions-text-mobile.png)
+![Mobile view instructions](docs/wireframes/instructions-text-mobile.png)
 
 #### Instructions Desktop view
 
@@ -146,11 +146,11 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Play button Mobile view
 
-![Mobile view play button]()
+![Mobile view play button](docs/wireframes/play-button-mobile.png)
 
 #### Play button Desktop view
 
-![Desktop view play button]()
+![Desktop view play button](docs/wireframes/play-button-desktop.png)
 
 ### Answers 
 
@@ -158,11 +158,11 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Answers Mobile view
 
-![Mobile view answers]()
+![Mobile view answers](docs/wireframes/answers-mobile.png)
 
 #### Answers Desktop View
 
-![Desktop view answers]()
+![Desktop view answers](docs/wireframes/answers-desktop.png)
 
 ### Next and Previous buttons 
 
