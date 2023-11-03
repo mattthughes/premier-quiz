@@ -113,13 +113,13 @@ function selectAnswer(event) {
 
 
     Array.from(answerButtons.children).forEach(button => {
-        if (button.dataset.correct === 'true') {
-            button.classList.add('correct');
-        }
+       
 
         button.disabled = true;
 
     });
+
+}
 
     nextButton.addEventListener("click", () => {
 
@@ -130,8 +130,6 @@ function selectAnswer(event) {
         }
 
     });
-
-}
 
 function showNextQuestion() {
     currentQuestionIndex++;
@@ -144,24 +142,24 @@ function showNextQuestion() {
 
 function showResults() {
     resetState();
+
     if (score <= 3) {
-        gameArea.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
-        nextButton.innerText = 'Play Again';
+        questionElement.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
+        nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
     }
-    else if (score <= 6) {
-        gameArea.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
-        nextButton.innerText = 'Play Again';
+    else if (score <= 7) {
+        questionElement.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
+        nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
+
     } else if (score >= 10) {
         gameArea.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
         nextButton.style.display = 'block';
-        nextButton.innerText = 'next';
+        nextButton.innerHTML = 'next';
 
-        nextButton.removeEventListener('click', selectAnswer);
-        nextButton.addEventListener('click', joinRaffel);
+    }
 
-    };
 }
 
 function resetState() {
