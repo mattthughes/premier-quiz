@@ -72,12 +72,16 @@ main {
     text-align: center;
 }
 
-#answer-buttons button {
+#answer-buttons {
     padding-bottom: 10px;
     margin: 10px 5px 10px 5px;
 }
 
-#next-button button {
+.answer-btn {
+    padding-bottom: 10px;
+}
+
+.nxt-btn {
     position: relative;
     left: 42%;
     margin-bottom: 20px;
@@ -98,6 +102,13 @@ main {
 
 .hide {
     display: none;
+}
+
+.results-screen {
+    height: 20vh;
+    background-color: #FFDEAD;
+    padding: 10px;
+    margin: 5px;
 }
 
 

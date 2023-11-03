@@ -9,6 +9,7 @@ let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let startButton = document.getElementById('start-btn');
 let gameArea = document.getElementById('game-area');
+let results = document.getElementById('results-screen');
 
 
 // Initalise the Quiz //
@@ -24,6 +25,7 @@ hideAnswers();
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
     gameArea.classList.add('hide');
+    results.classList.add('hide');
 }
 
 function hideAnswers() {
@@ -83,7 +85,7 @@ function showQuestions() {
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement('button');
         button.innerText = answers.text;
-        button.classList.add('answer-buttons');
+        button.classList.add('answer-btn');
         answerButtons.appendChild(button);
 
         if (answers.correct) {
@@ -110,6 +112,7 @@ function selectAnswer(event) {
     }
 
     nextButton.style.display = 'block';
+    nextButton.classList.add('nxt-btn');
 
 
     Array.from(answerButtons.children).forEach(button => {
@@ -142,21 +145,28 @@ function showNextQuestion() {
 
 function showResults() {
     resetState();
+    questionElement.classList.add('hide');
+    gameArea.classList.add('hide');
+    results.classList.remove('hide');
+    results.classList.add('show', 'results-screen');
 
     if (score <= 3) {
-        questionElement.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
+        results.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
+        
+
     }
-    else if (score <= 7) {
-        questionElement.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
+    else if (score < 9) {
+        results.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
 
-    } else if (score >= 10) {
-        gameArea.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
+    } else if (score > 9) {
+        results.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
         nextButton.style.display = 'block';
         nextButton.innerHTML = 'next';
+        
 
     }
 

@@ -226,6 +226,9 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - Fixed a bug where the questions were being repeated added new function show results with the reset state function included in this function.
 - Fixed score bug which was not displaying correctly on the show results page in order to fix this I changed the template literal from questions to questions.length which got the length of the array fixing this issue.
 - Fixed issue regarding correct answers when loading the quiz all questions were highlighted in green, not allowing the user to answer or go to the next question in order to fix this, I changed where the function was placed and instead placed this in the select answer function, currently this function is showing the correct answers after, I will look to refactor this function to remove this element.
+- Fixed question and answer display bug by adding a curly bracket in between the for each statement and the event listener for the next button, I also removed the display correct answer part and just used button disabled instead which fixed this issue.
+
+
 ## Credits 
 
 ### Media 
