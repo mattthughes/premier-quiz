@@ -94,6 +94,7 @@ function showQuestions() {
 
     });
 
+
 }
 
 function selectAnswer(event) {
@@ -105,48 +106,58 @@ function selectAnswer(event) {
         selectButton.classList.add("correct");
     } else {
         selectButton.classList.add("incorrect");
-    
+
     }
 
-    nextButton.style.display = 'block'
+    nextButton.style.display = 'block';
 
-    nextButton.addEventListener("click", () =>{
 
-        if (currentQuestionIndex < questions.length){
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === 'true') {
+            button.classList.add('correct');
+        }
+
+        button.disabled = true;
+
+    });
+
+    nextButton.addEventListener("click", () => {
+
+        if (currentQuestionIndex < questions.length) {
             showNextQuestion();
         } else {
             startQuiz();
         }
 
-    })
+    });
 
 }
 
-function showNextQuestion () {
-    currentQuestionIndex ++;
-    if (currentQuestionIndex < questions.length){
+function showNextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
         showQuestions();
     } else {
         showResults();
     }
 }
 
-function showResults () {
+function showResults() {
     resetState();
-    if (score <= 3)  {
-       gameArea.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`
+    if (score <= 3) {
+        gameArea.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerText = 'Play Again';
-        nextButton.style.display = 'block'
+        nextButton.style.display = 'block';
     }
-     else if (score <= 6) {
-       gameArea.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`
+    else if (score <= 6) {
+        gameArea.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerText = 'Play Again';
-        nextButton.style.display = 'block'
+        nextButton.style.display = 'block';
     } else if (score >= 10) {
-       gameArea.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`
+        gameArea.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
         nextButton.style.display = 'block';
         nextButton.innerText = 'next';
-        
+
         nextButton.removeEventListener('click', selectAnswer);
         nextButton.addEventListener('click', joinRaffel);
 
