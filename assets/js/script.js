@@ -9,7 +9,7 @@ let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let startButton = document.getElementById('start-btn');
 let gameArea = document.getElementById('game-area');
-let results = document.getElementById('results-screen');
+
 
 
 // Initalise the Quiz //
@@ -145,31 +145,32 @@ function showNextQuestion() {
 
 function showResults() {
     resetState();
-    questionElement.classList.add('hide');
-    gameArea.classList.add('hide');
-    results.classList.remove('hide');
-    results.classList.add('show', 'results-screen');
 
     if (score <= 3) {
-        results.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
+        questionElement.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
         
 
     }
     else if (score < 9) {
-        results.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
+        questionElement.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
 
     } else if (score > 9) {
-        results.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
         nextButton.style.display = 'block';
         nextButton.innerHTML = 'next';
-        
 
+        nextButton.addEventListener('click', joinRaffle);
+        
     }
 
+}
+
+function joinRaffle () {
+    
 }
 
 function resetState() {
