@@ -80,6 +80,9 @@ main {
 .answer-btn {
     padding-bottom: 10px;
     margin-top: 20px;
+    background-color: #f8ff5a;
+    border: solid;
+    border-radius: 10%;
 }
 
 
