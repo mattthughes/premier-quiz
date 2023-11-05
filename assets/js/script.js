@@ -9,6 +9,7 @@ let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let startButton = document.getElementById('start-btn');
 let gameArea = document.getElementById('game-area');
+let contactForm = document.getElementById('raffle');
 
 
 
@@ -25,7 +26,7 @@ hideAnswers();
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
     gameArea.classList.add('hide');
-    results.classList.add('hide');
+    contactForm.classList.add('hide');
 }
 
 function hideAnswers() {
@@ -171,6 +172,16 @@ function showResults() {
 
 function joinRaffle () {
     
+    contactForm.classList.remove('hide');
+    contactForm.classList.add('show');
+
+    questionElement.classList.remove('show');
+    questionElement.classList.add('hide');
+
+    answerButtons.classList.remove('show');
+    answerButtons.classList.add('hide');
+
+
 }
 
 function resetState() {
