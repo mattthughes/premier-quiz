@@ -79,12 +79,20 @@ main {
 
 .answer-btn {
     padding-bottom: 10px;
+    margin-top: 20px;
 }
+
 
 .nxt-btn {
     position: relative;
-    left: 42%;
+    align-self: center;
+    background-color: #808080;
     margin-bottom: 20px;
+    width: 4em;
+    padding: 5px;
+    text-align: center;
+    border: solid;
+    border-radius: 10%;
 }
 
 .incorrect {
@@ -109,6 +117,35 @@ main {
     background-color: #FFDEAD;
     padding: 10px;
     margin: 5px;
+}
+
+
+.raffle {
+    display: flex;
+    background-color: #FFDEAD;
+    flex-direction: column;
+    padding: 20px;
+    align-items: baseline;
+    margin: 5px;
+
+}
+
+.raffle-inputs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.text-input {
+    padding-left: 5px;
+}
+
+#favourite-team {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 20px;
 }
 
 
@@ -168,7 +205,6 @@ footer a {
         font-size: 100%;
         padding: 10px;
 
-
     }
 
     #instructions-btn {
@@ -182,6 +218,10 @@ footer a {
 
     .instructions-text {
         margin-right: 20px;
+    }
+
+    .nxt-btn {
+        padding: 10px;
     }
 
     #game-area {
