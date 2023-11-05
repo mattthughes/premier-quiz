@@ -1,3 +1,4 @@
+
 const questions = [
     {
         question: "Who scored the first goal in the Premier League?",
