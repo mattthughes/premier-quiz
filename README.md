@@ -35,6 +35,8 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [Answers Mobile view](#answers-mobile-view)
       - [Answers Desktop View](#answers-desktop-view)
     - [Correct and wrong answers](#correct-and-wrong-answers)
+      - [Mobile view correct and wrong answers](#mobile-view-correct-and-wrong-answers)
+      - [Desktop view correct and wrong answers](#desktop-view-correct-and-wrong-answers)
     - [Next  button](#next--button)
       - [Mobile next button view](#mobile-next-button-view)
       - [Desktop next  button view](#desktop-next--button-view)
@@ -153,11 +155,11 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Play button Mobile view
 
-![Mobile view play button](docs/wireframes/play-button-mobile.png)
+![Mobile view play button](docs/wireframes/start-button-mobile.png)
 
 #### Play button Desktop view
 
-![Desktop view play button](docs/wireframes/play-button-desktop.png)
+![Desktop view play button](docs/wireframes/start-button-desktop.png)
 
 ### Answers 
 
@@ -175,9 +177,13 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 * This element will be the main purpose behind the quiz will give users a visual que showing them if they got the answers correct or wrong which will be kept track of and trigged by javascript.
 
+#### Mobile view correct and wrong answers
+
 ![Correct answers mobile view](docs/wireframes/correct-answer-mobile.png)
 
 ![Wrong answers mobile view](docs/wireframes/wrong-answer-mobile.png)
+
+#### Desktop view correct and wrong answers 
 
 ![Correct answers desktop view](docs/wireframes/correct-answer-desktop.png)
 
@@ -201,13 +207,11 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Mobile view contact page
 
-[Mobile view raffle page](docs/wireframes/raffle-form-mobile.png)
-
-
+![Mobile view raffle page](docs/wireframes/raffle-form-mobile.png)
 
 #### Desktop view contact page 
 
-[Desktop view raffle page]()
+![Desktop view raffle page](docs/wireframes/raffle-desktop.png)
 
 ### Error 404 page
 

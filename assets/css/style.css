@@ -167,7 +167,7 @@ main {
 #favourite-team {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 2px;
     height: 20px;
 }
 
@@ -254,8 +254,7 @@ footer a {
     /* Game area styling */
     #game-area {
         position: relative;
-        left: 5%;
-        width: 90vw;
+        width: 96vw;
 
     }
 
@@ -280,6 +279,22 @@ footer a {
 
     }
 
+
+    #raffle-inputs label {
+        font-size: 16px;
+    }
+
+    .text-input {
+        height: 25px;
+        font-size: 16px;
+    }
+
+    #favourite-team {
+        height: 25px;
+        font-size: 16px;
+        padding-top: 2px;
+    }
+
 }
 
 /* Media query for smaller desktop devices */
@@ -289,6 +304,7 @@ footer a {
     h1 {
         font-size: 30px;
     }
+
 
     /* Quiz styling */
     .quiz {
@@ -300,13 +316,46 @@ footer a {
     }
 
     /* Game area styling */
-    .game-area {
-        height: 55vh;
-
+    #game-area {
+        width: 97vw;
     }
 
     #next-button button {
         margin-left: 20px;
     }
 
+    .raffle-heading h2 {
+        font-size: 25px;
+    }
+
+    .raffle-heading p {
+        font-size: 20px;
+    }
+
+    .raffle-inputs label {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .text-input {
+        font-size: 20px;
+    }
+
+    .raffle-button {
+        font-size: 20px;
+    }
+
+    #favourite-team {
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+
+    .instructions-text {
+        width: 1820px;
+    }
 }
