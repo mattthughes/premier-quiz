@@ -219,7 +219,7 @@ function joinRaffle() {
     answerButtons.classList.remove('show');
     answerButtons.classList.add('hide');
 
-    raffle.classList.add('raffle')
+    raffle.classList.add('raffle');
 
 
 }
