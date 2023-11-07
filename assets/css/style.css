@@ -255,6 +255,7 @@ footer a {
     #game-area {
         position: relative;
         width: 96vw;
+        margin-top: 100px;
 
     }
 
@@ -317,7 +318,10 @@ footer a {
 
     /* Game area styling */
     #game-area {
-        width: 97vw;
+        width: 60vw;
+        position: relative;
+        left: 30%;
+        border: solid;
     }
 
     #next-button button {
