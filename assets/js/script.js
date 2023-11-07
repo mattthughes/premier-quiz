@@ -236,18 +236,20 @@ function joinRaffle() {
 
 }
 
-function raffleEnd () {
+function raffleEnd (event) {
     contactForm.classList.remove('show');
     contactForm.classList.add('hide');
 
     raffle.classList.remove('raffle');
 
-    thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.textContent} ${surname.textContent} , 
-    We have recieved your message and if you are succesfull ${favouriteTeam} will be in touch. 
+    thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
+    We have recieved your message and if you are succesfull ${favouriteTeam.value} will be in touch. 
     If you would like to take the quiz again simply just press the back button`;
 
     backButton.classList.remove('hide');
     backButton.classList.add('show');
+
+    event.preventDefault();
 
     
 }
