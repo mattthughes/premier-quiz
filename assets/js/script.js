@@ -10,6 +10,15 @@ let instructionsTextElement = document.getElementById('instructions-text');
 let startButton = document.getElementById('start-btn');
 let gameArea = document.getElementById('game-area');
 let contactForm = document.getElementById('raffle');
+let submitButton = document.getElementById('submit-btn');
+let firstName = document.getElementById('first-name');
+let surname = document.getElementById('surname');
+let emailAddress = document.getElementById('email-address');
+let favouriteTeam = document.getElementById('favourite-team');
+let thankYouText = document.getElementById('thank-you-text');
+let backButton = document.getElementById('back-btn');
+let raffleInputs = document.getElementsByClassName('raffle-inputs');
+
 
 
 
@@ -29,6 +38,7 @@ function hideInstructions() {
     instructionsTextElement.classList.add('hide');
     gameArea.classList.add('hide');
     contactForm.classList.add('hide');
+    backButton.classList.add('hide');
 }
 
 /**Hidding  key elements */
@@ -221,7 +231,25 @@ function joinRaffle() {
 
     raffle.classList.add('raffle');
 
+    submitButton.addEventListener('click', raffleEnd);
 
+
+}
+
+function raffleEnd () {
+    contactForm.classList.remove('show');
+    contactForm.classList.add('hide');
+
+    raffle.classList.remove('raffle');
+
+    thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.textContent} ${surname.textContent} , 
+    We have recieved your message and if you are succesfull ${favouriteTeam} will be in touch. 
+    If you would like to take the quiz again simply just press the back button`;
+
+    backButton.classList.remove('hide');
+    backButton.classList.add('show');
+
+    
 }
 
 /** Setting the next button to none and using a while loop to state while the answer buttons.first child is true to then 

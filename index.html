@@ -92,7 +92,7 @@
       </section>
       <!--Contact Form-->
       <section id="contact-form">
-        <form id="raffle" method="GET" action="index.html">
+        <form id="raffle" method="POST" action="thankyou.html">
           <div class="raffle-heading">
             <h2>Premier League Greatest Facts Raffle</h2>
             <p>
@@ -166,8 +166,15 @@
               <option value="wolves">Wolverhampton Wanderers</option>
             </select>
           </div>
-          <button type="submit" class="raffle-button">Submit</button>
+          <button type="click" id= 'submit-btn' class="raffle-button">Submit</button>
         </form>
+      </section>
+
+      <section id="thank-you">
+        <div id="thank-you-text"></div>
+        <div id="thank-you-button">
+          <a href="index.html" id="back-btn">Go Back</a>
+        </div>
       </section>
     </main>
     <!--Footer Element-->
