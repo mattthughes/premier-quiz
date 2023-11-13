@@ -7,7 +7,8 @@ let quizElement = document.getElementById('quiz');
 let nextButton = document.getElementById('next-button');
 let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
-let startButton = document.getElementById('start-btn');
+let quizStartButton = document.getElementById('quiz-start-btn');
+let instructionStartBtn = document.getElementById('instructions-start-btn');
 let gameArea = document.getElementById('game-area');
 let contactForm = document.getElementById('raffle');
 let submitButton = document.getElementById('submit-btn');
@@ -32,6 +33,11 @@ let currentQuestionIndex = 0;
 
 hideInstructions();
 hideAnswers();
+
+instructionsButton.addEventListener('click', showInstructions);
+quizStartButton.addEventListener('click', runGame);
+instructionStartBtn.addEventListener('click', runGame);
+
 
 /**Hidding  key elements */
 
@@ -67,6 +73,7 @@ function showInstructions() {
     instructionsTextElement.classList.remove('hide');
     instructionsTextElement.classList.add('show', 'quiz-instructions');
     hideElements();
+    
 }
 
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
@@ -91,6 +98,10 @@ function runGame() {
 
     startQuiz();
 
+    startButton.addEventListener('click', showQuestions);
+
+    
+
 }
 
 /**Setting up quiz functionality by setting default parameters */
@@ -100,6 +111,8 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestions();
+
+    
 }
 
 /* This function is reseting the state and getting the current question by using the object questions and the currentquestion index 
@@ -201,7 +214,7 @@ function showResults() {
 
 
     }
-    else if (score < 9) {
+    else if (score <= 9) {
         questionElement.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';

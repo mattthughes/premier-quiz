@@ -48,7 +48,14 @@ main {
     border-radius: 10%;
 }
 
-#start-btn {
+#quiz-start-btn {
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+#instructions-start-btn {
     width: fit-content;
     margin-bottom: 10px;
     border: 4px solid rgb(0, 0, 0);
@@ -262,7 +269,16 @@ footer a {
 
     }
 
-    #start-btn {
+    #quiz-start-btn {
+
+        align-self: center;
+        margin-bottom: 20px;
+        font-size: 100%;
+        padding: 10px;
+
+    }
+
+    #instructions-start-btn {
 
         align-self: center;
         margin-bottom: 20px;
