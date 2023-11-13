@@ -171,6 +171,36 @@ main {
     height: 20px;
 }
 
+#thank-you {
+    background-color: #FFDEAD;
+    margin: 5px;
+    padding: 10px;
+}
+
+#thank-you-text {
+    
+    padding: 10px;
+    text-align: center;
+}
+
+#thank-you-button {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#thank-you-button a {
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+    border: solid 4px;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+
+}
+
 
 /* Footer styles */
 

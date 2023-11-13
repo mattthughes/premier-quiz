@@ -16,6 +16,7 @@ let surname = document.getElementById('surname');
 let emailAddress = document.getElementById('email-address');
 let favouriteTeam = document.getElementById('favourite-team');
 let thankYouText = document.getElementById('thank-you-text');
+let thankYou = document.getElementById('thank-you');
 let backButton = document.getElementById('back-btn');
 let raffleInputs = document.getElementsByClassName('raffle-inputs');
 
@@ -39,6 +40,7 @@ function hideInstructions() {
     gameArea.classList.add('hide');
     contactForm.classList.add('hide');
     backButton.classList.add('hide');
+    thankYou.classList.add('hide');
 }
 
 /**Hidding  key elements */
@@ -239,8 +241,9 @@ function joinRaffle() {
 function raffleEnd (event) {
     contactForm.classList.remove('show');
     contactForm.classList.add('hide');
-
     raffle.classList.remove('raffle');
+    thankYou.classList.remove('hide');
+    thankYou.classList.add('show');
 
     thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
     We have recieved your message and if you are succesfull ${favouriteTeam.value} will be in touch. 
