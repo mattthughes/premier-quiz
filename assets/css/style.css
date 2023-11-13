@@ -171,6 +171,13 @@ main {
     height: 20px;
 }
 
+#submit-btn {
+    background-color: white;
+    border: solid;
+    border-radius: 10%;
+}
+
+/** Raffle end styles **/
 #thank-you {
     background-color: #FFDEAD;
     margin: 5px;
@@ -178,7 +185,7 @@ main {
 }
 
 #thank-you-text {
-    
+
     padding: 10px;
     text-align: center;
 }
@@ -285,8 +292,6 @@ footer a {
     #game-area {
         position: relative;
         width: 96vw;
-        margin-top: 100px;
-
     }
 
     #questions {
@@ -351,7 +356,6 @@ footer a {
         width: 60vw;
         position: relative;
         left: 30%;
-        border: solid;
     }
 
     #next-button button {
@@ -382,6 +386,10 @@ footer a {
     #favourite-team {
         font-size: 20px;
         padding-top: 0;
+    }
+
+    #thank-you {
+        margin-left: 30px;
     }
 
 }

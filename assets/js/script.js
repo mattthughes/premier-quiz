@@ -246,7 +246,7 @@ function raffleEnd (event) {
     thankYou.classList.add('show');
 
     thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
-    We have recieved your message and if you are succesfull ${favouriteTeam.value} will be in touch. 
+    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch. 
     If you would like to take the quiz again simply just press the back button`;
 
     backButton.classList.remove('hide');
