@@ -21,9 +21,6 @@ let thankYou = document.getElementById('thank-you');
 let backButton = document.getElementById('back-btn');
 let raffleInputs = document.getElementsByClassName('raffle-inputs');
 
-
-
-
 // Initalise the Quiz //
 
 let score = 0;
@@ -37,7 +34,6 @@ hideAnswers();
 instructionsButton.addEventListener('click', showInstructions);
 quizStartButton.addEventListener('click', runGame);
 instructionStartBtn.addEventListener('click', runGame);
-
 
 /**Hidding  key elements */
 
@@ -64,7 +60,6 @@ function hideElements() {
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
     quizElement.classList.add('hide');
-
 }
 
 /**Hidding and unhiding key elements */
@@ -73,7 +68,6 @@ function showInstructions() {
     instructionsTextElement.classList.remove('hide');
     instructionsTextElement.classList.add('show', 'quiz-instructions');
     hideElements();
-    
 }
 
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
@@ -81,11 +75,9 @@ function showInstructions() {
 function runGame() {
     questionElement.classList.remove('hide');
     questionElement.classList.add('show');
-
     instructionsTextElement.classList.remove('show');
     hideElements();
     hideInstructions();
-
 
     answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
@@ -99,9 +91,6 @@ function runGame() {
     startQuiz();
 
     startButton.addEventListener('click', showQuestions);
-
-    
-
 }
 
 /**Setting up quiz functionality by setting default parameters */
@@ -111,8 +100,6 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestions();
-
-    
 }
 
 /* This function is reseting the state and getting the current question by using the object questions and the currentquestion index 
@@ -170,10 +157,7 @@ function selectAnswer(event) {
 
 
     Array.from(answerButtons.children).forEach(button => {
-
-
         button.disabled = true;
-
     });
 
 }
@@ -211,8 +195,6 @@ function showResults() {
         questionElement.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
         nextButton.innerHTML = 'Play Again';
         nextButton.style.display = 'block';
-
-
     }
     else if (score <= 9) {
         questionElement.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
@@ -223,7 +205,6 @@ function showResults() {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
         nextButton.style.display = 'block';
         nextButton.innerHTML = 'next';
-
         nextButton.addEventListener('click', joinRaffle);
 
     }
@@ -247,27 +228,31 @@ function joinRaffle() {
     raffle.classList.add('raffle');
 
     submitButton.addEventListener('click', raffleEnd);
-
-
 }
 
-function raffleEnd (event) {
+function raffleEnd(event) {
     contactForm.classList.remove('show');
     contactForm.classList.add('hide');
     raffle.classList.remove('raffle');
     thankYou.classList.remove('hide');
     thankYou.classList.add('show');
 
+
+
+    if (favouriteTeam.value === 'None') {
+        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , If you would like to take part again in the quiz just simply press the back button.`;
+    } else {
+
     thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
     We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch. 
     If you would like to take the quiz again simply just press the back button`;
+
+    }
 
     backButton.classList.remove('hide');
     backButton.classList.add('show');
 
     event.preventDefault();
-
-    
 }
 
 /** Setting the next button to none and using a while loop to state while the answer buttons.first child is true to then 
