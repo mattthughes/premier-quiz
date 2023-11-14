@@ -9,6 +9,11 @@ let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let quizStartButton = document.getElementById('quiz-start-btn');
 let instructionStartBtn = document.getElementById('instructions-start-btn');
+let questionChoice = document.getElementById('question-choice');
+let difficultyBtn = document.getElementById('difficulty-buttons');
+let easyChoice = document.getElementById('easy-questions');
+let mediumChoice = document.getElementById('medium-questions');
+let hardChoice = document.getElementById('hard-questions');
 let gameArea = document.getElementById('game-area');
 let contactForm = document.getElementById('raffle');
 let submitButton = document.getElementById('submit-btn');
@@ -43,6 +48,7 @@ function hideInstructions() {
     contactForm.classList.add('hide');
     backButton.classList.add('hide');
     thankYou.classList.add('hide');
+    questionChoice.classList.add('hide');
 }
 
 /**Hidding  key elements */
@@ -60,6 +66,7 @@ function hideElements() {
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
     quizElement.classList.add('hide');
+
 }
 
 /**Hidding and unhiding key elements */

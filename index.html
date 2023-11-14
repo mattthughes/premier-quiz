@@ -45,6 +45,46 @@
           </div>
         </div>
       </section>
+
+      <!--Difficulty choice-->
+
+      <section id="question-choice">
+        <h3>Welcome to the Quiz!</h3>
+        <div id="difficulty-selection">
+          <p>
+            Welcome to the Premier League Greatest Facts quiz before we begin,
+            Feel free to select how hard you would like the quiz to be!
+          </p>
+        </div>
+        <div id="difficulty-buttons">
+          <label for="easy-questions">Easy</label>
+          <input
+            type="radio"
+            id="easy-questions"
+            name="easy-questions"
+            required
+          />
+          <br />
+          <label for="medium-questions">Medium</label>
+          <input
+            type="radio"
+            id="medium-questions"
+            name="medium-questions"
+            required
+          />
+          <br />
+          <label for="hard-questions">Hard</label>
+          <input
+            type="radio"
+            id="hard-questions"
+            name="hard-questions"
+            required
+          />
+          <br />
+          <button id="difficulty-sub-btn">Submit</button>
+        </div>
+      </section>
+
       <!--Game Area-->
       <section id="game-area">
         <div id="questions">Question goes here</div>
@@ -132,11 +172,7 @@
             />
             <br />
             <label for="favourite-team">Pick your favourite team</label>
-            <select
-              name="favourite-team"
-              id="favourite-team"
-              placeholder=""
-            >
+            <select name="favourite-team" id="favourite-team" placeholder="">
               <option value="Arsenal">Arsenal</option>
               <option value="Afc-Bournemouth">Afc Bournemouth</option>
               <option value="Aston-Villa">Aston Villa</option>
