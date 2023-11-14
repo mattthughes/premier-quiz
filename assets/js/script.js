@@ -109,9 +109,9 @@ the answers and changing the button text to the answers.text which is the answer
 method to move the button then finally setting up the correct answer functionality by checking if the answer.correct is true to 
 set the button data to answers.correct I then create an event listener with a click parameter and a select answer function. */
 
-function showQuestions() {
+function showEasyQuestions() {
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = easyQuestions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerText = questionNum + "." + currentQuestion.question;
     currentQuestion.answers.forEach(answers => {
@@ -128,7 +128,28 @@ function showQuestions() {
 
     });
 
+}
 
+function chooseQuestions () {
+
+}
+
+function showMediumQuestions () {
+    resetState();
+    currentQuestion = mediumQuestions[currentQuestionIndex];
+    questionElement.innerText = questionNum + "." + currentQuestionIndex;
+    currentQuestion.answers.forEach(answers => {
+        const button = document.createElement('button');
+        button.classList.add('answer-btn');
+        answerButtons.appendChild(button);
+
+        if (answers.correct) {
+            button.dataset.correct = answers.correct;
+        }
+
+        button.addEventListener('click', selectAnswer);
+
+    })
 }
 
 /* This function is first creating a variable called select button with the constant key word which cannot be changed then creating
@@ -164,7 +185,7 @@ function selectAnswer(event) {
 
 nextButton.addEventListener("click", () => {
 
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < easyQuestions.length) {
         showNextQuestion();
     } else {
         startQuiz();
@@ -177,7 +198,7 @@ nextButton.addEventListener("click", () => {
  */
 function showNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < easyQuestions.length) {
         showQuestions();
     } else {
         showResults();

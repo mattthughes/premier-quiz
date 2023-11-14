@@ -1,5 +1,5 @@
 
-const questions = [
+const easyQuestions = [
     {
         question: "Who scored the first goal in the Premier League?",
 
@@ -33,6 +33,10 @@ const questions = [
         ]
     },
 
+];
+
+const mediumQuestions = [
+
     {
         question: "Who is the Premier League record goal scorer?",
 
@@ -42,7 +46,10 @@ const questions = [
             { text: "Alan Shearer", correct: true },
             { text: "Sergio Aguero", correct: false },
         ]
+
     },
+
+
 
     {
         question: "How many points did Derby County score in the 2007/2008 season?",
@@ -65,6 +72,11 @@ const questions = [
             { text: "Asmir Begovic", correct: false },
         ]
     },
+
+
+];
+
+const hardQuestions = [
 
     {
         question: "Who has missed the most penalties in the Premier League?",
@@ -111,3 +123,4 @@ const questions = [
     }
 
 ];
+
