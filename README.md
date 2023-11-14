@@ -282,6 +282,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - Fixed an issue with raffle showing at the beginning of the quiz, to fix this I added classlist hide to the hide instructions function, added the show class to the raffle end function to fix this issue.
 - Fixed an issue regarding the result screen not showing if the users score was 9 adding the less than or equal to symbol to the if statement to fix this issue.
 - Fixed an HTML issue regarding the favourite team input option by removing the required attribute.
+- Fixed radio button issue, by adjusting the value from easy questions the same as the label to decision orignally the user was able to select multiple options rather than just one this change fixed this issue.
 - 
 
 

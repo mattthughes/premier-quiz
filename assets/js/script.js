@@ -14,6 +14,7 @@ let difficultyBtn = document.getElementById('difficulty-buttons');
 let easyChoice = document.getElementById('easy-questions');
 let mediumChoice = document.getElementById('medium-questions');
 let hardChoice = document.getElementById('hard-questions');
+let difficultySubBtn = document.getElementById('difficulty-sub-btn');
 let gameArea = document.getElementById('game-area');
 let contactForm = document.getElementById('raffle');
 let submitButton = document.getElementById('submit-btn');
@@ -37,8 +38,8 @@ hideInstructions();
 hideAnswers();
 
 instructionsButton.addEventListener('click', showInstructions);
-quizStartButton.addEventListener('click', runGame);
-instructionStartBtn.addEventListener('click', runGame);
+quizStartButton.addEventListener('click', chooseQuestions);
+instructionStartBtn.addEventListener('click', chooseQuestions);
 
 /**Hidding  key elements */
 
@@ -77,6 +78,7 @@ function showInstructions() {
     hideElements();
 }
 
+
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
 
 function runGame() {
@@ -97,7 +99,7 @@ function runGame() {
 
     startQuiz();
 
-    startButton.addEventListener('click', showQuestions);
+    startButton.addEventListener('click', showEasyQuestions);
 }
 
 /**Setting up quiz functionality by setting default parameters */
@@ -138,6 +140,15 @@ function showEasyQuestions() {
 }
 
 function chooseQuestions () {
+    questionChoice.classList.remove('hide');
+    questionChoice.classList.add('show');
+
+    difficultySubBtn.addEventListener('click', runGame)
+
+    instructionsButton.classList.add('hide');
+    quizIntro.classList.add('hide');
+    quizElement.classList.add('hide');
+
 
 }
 

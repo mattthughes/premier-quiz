@@ -47,7 +47,6 @@
       </section>
 
       <!--Difficulty choice-->
-
       <section id="question-choice">
         <h3>Welcome to the Quiz!</h3>
         <div id="difficulty-selection">
@@ -57,29 +56,39 @@
           </p>
         </div>
         <div id="difficulty-buttons">
-          <label for="easy-questions">Easy</label>
-          <input
-            type="radio"
-            id="easy-questions"
-            name="easy-questions"
-            required
-          />
+          <div>
+            <label for="easy-questions">Easy</label>
+            <input
+              type="radio"
+              id="easy-questions"
+              name="decision"
+              value="easy-questons"
+              required
+            />
+          </div>
           <br />
-          <label for="medium-questions">Medium</label>
-          <input
-            type="radio"
-            id="medium-questions"
-            name="medium-questions"
-            required
-          />
+          <div>
+            <label for="medium-questions">Medium</label>
+            <input
+              type="radio"
+              id="medium-questions"
+              name="decision"
+              value="medium-questions"
+              required
+            />
+          </div>
+
           <br />
-          <label for="hard-questions">Hard</label>
-          <input
-            type="radio"
-            id="hard-questions"
-            name="hard-questions"
-            required
-          />
+          <div>
+            <label for="hard-questions">Hard</label>
+            <input
+              type="radio"
+              id="hard-questions"
+              name="decision"
+              value="hard-questions"
+              required
+            />
+          </div>
           <br />
           <button id="difficulty-sub-btn">Submit</button>
         </div>
