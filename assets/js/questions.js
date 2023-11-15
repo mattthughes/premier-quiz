@@ -1,5 +1,5 @@
 
-const easyQuestions = [
+ export const questions = [
     {
         question: "Who scored the first goal in the Premier League?",
 
@@ -32,11 +32,6 @@ const easyQuestions = [
             { text: "13", correct: true },
         ]
     },
-
-];
-
-const mediumQuestions = [
-
     {
         question: "Who is the Premier League record goal scorer?",
 
@@ -72,11 +67,6 @@ const mediumQuestions = [
             { text: "Asmir Begovic", correct: false },
         ]
     },
-
-
-];
-
-const hardQuestions = [
 
     {
         question: "Who has missed the most penalties in the Premier League?",

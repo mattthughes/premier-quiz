@@ -1,4 +1,8 @@
 
+import {
+    questions
+} from './questions.js';
+
 // Get the document html elements //
 let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
@@ -9,12 +13,6 @@ let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
 let quizStartButton = document.getElementById('quiz-start-btn');
 let instructionStartBtn = document.getElementById('instructions-start-btn');
-let questionChoice = document.getElementById('question-choice');
-let difficultyBtn = document.getElementById('difficulty-buttons');
-let easyChoice = document.getElementById('easy-questions');
-let mediumChoice = document.getElementById('medium-questions');
-let hardChoice = document.getElementById('hard-questions');
-let difficultySubBtn = document.getElementById('difficulty-sub-btn');
 let gameArea = document.getElementById('game-area');
 let contactForm = document.getElementById('raffle');
 let submitButton = document.getElementById('submit-btn');
@@ -38,8 +36,8 @@ hideInstructions();
 hideAnswers();
 
 instructionsButton.addEventListener('click', showInstructions);
-quizStartButton.addEventListener('click', chooseQuestions);
-instructionStartBtn.addEventListener('click', chooseQuestions);
+quizStartButton.addEventListener('click', runGame);
+instructionStartBtn.addEventListener('click', runGame);
 
 /**Hidding  key elements */
 
@@ -49,7 +47,6 @@ function hideInstructions() {
     contactForm.classList.add('hide');
     backButton.classList.add('hide');
     thankYou.classList.add('hide');
-    questionChoice.classList.add('hide');
 }
 
 /**Hidding  key elements */
@@ -99,7 +96,6 @@ function runGame() {
 
     startQuiz();
 
-    startButton.addEventListener('click', showEasyQuestions);
 }
 
 /**Setting up quiz functionality by setting default parameters */
@@ -118,9 +114,9 @@ the answers and changing the button text to the answers.text which is the answer
 method to move the button then finally setting up the correct answer functionality by checking if the answer.correct is true to 
 set the button data to answers.correct I then create an event listener with a click parameter and a select answer function. */
 
-function showEasyQuestions() {
+function showQuestions() {
     resetState();
-    let currentQuestion = easyQuestions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerText = questionNum + "." + currentQuestion.question;
     currentQuestion.answers.forEach(answers => {
@@ -139,36 +135,10 @@ function showEasyQuestions() {
 
 }
 
-function chooseQuestions () {
-    questionChoice.classList.remove('hide');
-    questionChoice.classList.add('show');
-
-    difficultySubBtn.addEventListener('click', runGame)
-
-    instructionsButton.classList.add('hide');
-    quizIntro.classList.add('hide');
-    quizElement.classList.add('hide');
-
-
+function randomiseQuestions () {
+    
 }
 
-function showMediumQuestions () {
-    resetState();
-    currentQuestion = mediumQuestions[currentQuestionIndex];
-    questionElement.innerText = questionNum + "." + currentQuestionIndex;
-    currentQuestion.answers.forEach(answers => {
-        const button = document.createElement('button');
-        button.classList.add('answer-btn');
-        answerButtons.appendChild(button);
-
-        if (answers.correct) {
-            button.dataset.correct = answers.correct;
-        }
-
-        button.addEventListener('click', selectAnswer);
-
-    })
-}
 
 /* This function is first creating a variable called select button with the constant key word which cannot be changed then creating
 another varible which is checking if the select button is the variable in use. After its checkig if the question is correct to 
@@ -203,7 +173,7 @@ function selectAnswer(event) {
 
 nextButton.addEventListener("click", () => {
 
-    if (currentQuestionIndex < easyQuestions.length) {
+    if (currentQuestionIndex < questions.length) {
         showNextQuestion();
     } else {
         startQuiz();
@@ -216,7 +186,7 @@ nextButton.addEventListener("click", () => {
  */
 function showNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < easyQuestions.length) {
+    if (currentQuestionIndex < questions.length) {
         showQuestions();
     } else {
         showResults();
