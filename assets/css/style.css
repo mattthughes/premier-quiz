@@ -416,4 +416,9 @@ footer a {
     .instructions-text {
         width: 1820px;
     }
+
+    #thank-you {
+        position: relative;
+        left: 35%;
+    }
 }
