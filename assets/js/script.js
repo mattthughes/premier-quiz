@@ -25,6 +25,7 @@ let thankYou = document.getElementById('thank-you');
 let backButton = document.getElementById('back-btn');
 let raffleInputs = document.getElementsByClassName('raffle-inputs');
 
+
 // Initalise the Quiz //
 
 let score = 0;
@@ -135,10 +136,6 @@ function showQuestions() {
 
 }
 
-function randomiseQuestions () {
-    
-}
-
 
 /* This function is first creating a variable called select button with the constant key word which cannot be changed then creating
 another varible which is checking if the select button is the variable in use. After its checkig if the question is correct to 
@@ -234,7 +231,7 @@ function joinRaffle() {
     answerButtons.classList.remove('show');
     answerButtons.classList.add('hide');
 
-    raffle.classList.add('raffle');
+    contactForm.classList.add('raffle');
 
     submitButton.addEventListener('click', raffleEnd);
 }
@@ -242,19 +239,21 @@ function joinRaffle() {
 function raffleEnd(event) {
     contactForm.classList.remove('show');
     contactForm.classList.add('hide');
-    raffle.classList.remove('raffle');
+    contactForm.classList.remove('raffle');
     thankYou.classList.remove('hide');
     thankYou.classList.add('show');
 
 
 
     if (favouriteTeam.value === 'None') {
+        thankYou.classList.add('thank-you-none');
         thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , If you would like to take part again in the quiz just simply press the back button.`;
     } else {
 
     thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
     We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch. 
     If you would like to take the quiz again simply just press the back button`;
+    thankYou.classList.add('thank-you');
 
     }
 

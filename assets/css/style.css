@@ -212,9 +212,7 @@ main {
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 10%;
-
 }
-
 
 /* Footer styles */
 
@@ -265,8 +263,6 @@ footer a {
     #intro-buttons {
         display: flex;
         flex-direction: column;
-
-
     }
 
     #quiz-start-btn {
@@ -315,7 +311,6 @@ footer a {
         font-size: 20px;
     }
 
-
     #answer-buttons button {
         margin: 20px 5px 10px 5px;
         font-size: 100%;
@@ -330,7 +325,6 @@ footer a {
         font-size: 20px;
 
     }
-
 
     #raffle-inputs label {
         font-size: 16px;
@@ -417,7 +411,12 @@ footer a {
         width: 1820px;
     }
 
-    #thank-you {
+    .thank-you {
+        position: relative;
+        left: 13%;
+    }
+
+    .thank-you-none {
         position: relative;
         left: 35%;
     }
