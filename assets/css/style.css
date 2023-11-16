@@ -82,6 +82,11 @@ main {
 
 }
 
+.game-heading {
+    display: flex;
+    justify-content: center;
+}
+
 /** Question area styling **/
 #questions {
     text-align: center;

@@ -70,6 +70,7 @@ function showInstructions() {
 function runGame() {
     questionElement.classList.remove('hide');
     questionElement.classList.add('show');
+    quizHeading.classList.add('game-heading');
     instructionsTextElement.classList.remove('show');
     hideElements();
     hideInstructions();
