@@ -1,7 +1,6 @@
 import {
     questions
 } from './questions.js';
-
 // Get the document html elements //
 let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
@@ -23,19 +22,14 @@ let favouriteTeam = document.getElementById('favourite-team');
 let thankYouText = document.getElementById('thank-you-text');
 let thankYou = document.getElementById('thank-you');
 let backButton = document.getElementById('back-btn');
-let raffleInputs = document.getElementsByClassName('raffle-inputs');
-
 // Initalise the Quiz //
 let score = 0;
-let question = 0;
-let answer = 0;
 let currentQuestionIndex = 0;
 hideInstructions();
 hideAnswers();
 instructionsButton.addEventListener('click', showInstructions);
 quizStartButton.addEventListener('click', runGame);
 instructionStartBtn.addEventListener('click', runGame);
-
 /**Hidding  key elements */
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
@@ -44,28 +38,24 @@ function hideInstructions() {
     backButton.classList.add('hide');
     thankYou.classList.add('hide');
 }
-
 /**Hidding  key elements */
 function hideAnswers() {
     answerButtons.classList.add('hide');
     questionElement.classList.add('hide');
     nextButton.classList.add('hide');
 }
-
 /**Hidding  key elements */
 function hideElements() {
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
     quizElement.classList.add('hide');
 }
-
 /**Hidding and unhiding key elements */
 function showInstructions() {
     instructionsTextElement.classList.remove('hide');
     instructionsTextElement.classList.add('show', 'quiz-instructions');
     hideElements();
 }
-
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
 function runGame() {
     questionElement.classList.remove('hide');
@@ -82,7 +72,6 @@ function runGame() {
     gameArea.classList.add('show');
     startQuiz();
 }
-
 /**Setting up quiz functionality by setting default parameters */
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -90,7 +79,6 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestions();
 }
-
 /** Get current question which is questions array and the current question index 
  * Set question number to the question index and add one
  * set the question element text to the number of the question and the current question
@@ -125,7 +113,6 @@ function showQuestions() {
  * the length of the array if it is show another question if not 
  * start quiz.
  */
-
 function selectAnswer(event) {
     const selectButton = event.target;
     const isCorrect = selectButton.dataset.correct === "true";
@@ -148,7 +135,6 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
-
 /** This function is adding onto the current question index and showing if the current question index is less 
  * than the questions in the array to show questions to get another question and answers from 
  * the question object otherwise show the results function.
@@ -161,7 +147,6 @@ function showNextQuestion() {
         showResults();
     }
 }
-
 /** This function is first using the reset state and then checking what the score is
  * then i am changing the question element space by using the inner html property to change the 
  * html and doing the same for the next button and setting this to a block level element. with the last option allowing the user to go to 
@@ -187,13 +172,11 @@ function showResults() {
         nextButton.addEventListener('click', joinRaffle);
     }
 }
-
 function handleForm (event) {
     let x = document.forms["raffle-form"]["first-name"].value;
     let j = document.forms["raffle-form"]["surname"].value;
     let y = document.forms["raffle-form"]["phone-number"].value;
     let i = document.forms["raffle-form"]["favourite-team"].value;
-
     if (x == ""){
         alert("Name must be filled out");
         return false;
@@ -210,12 +193,8 @@ function handleForm (event) {
     } else {
         submitButton.addEventListener("click", raffleEnd);
     }
-
     event.preventDefault();
-
-
 }
-
 
 //** This function is first removing the hide class and adding the show class to make this html visible which was previously hidden 
 // After this the function is hidding the question and answer elements to showcase the correct elements this will only be shown if a user gets ever answer correct **/
@@ -231,6 +210,12 @@ function joinRaffle() {
     submitButton.addEventListener('click', handleForm);
 }
 
+/**
+ * Raffle end function hides contact form and shows the thank you screen
+ * the function checks if the user selects none to then showcase the thank you text without the favourite team
+ * otherwise showcase the favourite team alongside the first, second name and phone number provided.
+ * 
+ */
 function raffleEnd(event) {
     contactForm.classList.remove('show');
     contactForm.classList.add('hide');
@@ -242,10 +227,9 @@ function raffleEnd(event) {
         thankYou.classList.add('thank-you-none');
         thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , If you would like to take part again in the quiz just simply press the back button.`;
     } else {
-
         thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
-    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the ${phoneNumber.value} you provided,. 
-    If you would like to take the quiz again simply just press the back button`;
+    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,. 
+    If you would like to take the quiz again simply just press the back button.`;
         thankYou.classList.add('thank-you');
     }
     backButton.classList.remove('hide');
@@ -262,6 +246,5 @@ function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
-
 }
 
