@@ -403,8 +403,14 @@ footer a {
         padding-top: 0;
     }
 
-    #thank-you {
+    .thank-you {
         margin-left: 30px;
+        position: relative;
+    }
+
+    .thank-you-none {
+        position: relative;
+        left: 20%;
     }
 
 }
@@ -418,11 +424,11 @@ footer a {
 
     .thank-you {
         position: relative;
-        left: 9%;
+        left: 5%;
     }
 
     .thank-you-none {
         position: relative;
-        left: 35%;
+        left: 30%;
     }
 }
