@@ -18,7 +18,7 @@ let contactForm = document.getElementById('raffle');
 let submitButton = document.getElementById('submit-btn');
 let firstName = document.getElementById('first-name');
 let surname = document.getElementById('surname');
-let emailAddress = document.getElementById('email-address');
+let phoneNumber = document.getElementById('contact-number');
 let favouriteTeam = document.getElementById('favourite-team');
 let thankYouText = document.getElementById('thank-you-text');
 let thankYou = document.getElementById('thank-you');
@@ -188,6 +188,35 @@ function showResults() {
     }
 }
 
+function handleForm (event) {
+    let x = document.forms["raffle-form"]["first-name"].value;
+    let j = document.forms["raffle-form"]["surname"].value;
+    let y = document.forms["raffle-form"]["phone-number"].value;
+    let i = document.forms["raffle-form"]["favourite-team"].value;
+
+    if (x == ""){
+        alert("Name must be filled out");
+        return false;
+    } else if (j == "") {
+        alert("Surname must be filled out");
+        return false;
+    } else if (y == ""){
+        alert("Please fill in your phone number");
+        return false;
+    }
+    else if (i == ""){
+        alert("Please pick your favourite team from the drop down box");
+        return false;
+    } else {
+        submitButton.addEventListener("click", raffleEnd);
+    }
+
+    event.preventDefault();
+
+
+}
+
+
 //** This function is first removing the hide class and adding the show class to make this html visible which was previously hidden 
 // After this the function is hidding the question and answer elements to showcase the correct elements this will only be shown if a user gets ever answer correct **/
 function joinRaffle() {
@@ -199,7 +228,7 @@ function joinRaffle() {
     answerButtons.classList.add('hide');
     contactForm.classList.add('raffle');
     quizHeading.classList.add('hide');
-    submitButton.addEventListener('click', raffleEnd);
+    submitButton.addEventListener('click', handleForm);
 }
 
 function raffleEnd(event) {
@@ -215,7 +244,7 @@ function raffleEnd(event) {
     } else {
 
         thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
-    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the ${emailAddress.value} you provided,. 
+    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the ${phoneNumber.value} you provided,. 
     If you would like to take the quiz again simply just press the back button`;
         thankYou.classList.add('thank-you');
     }
