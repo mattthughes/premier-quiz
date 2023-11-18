@@ -118,9 +118,28 @@ main {
     padding: 5px;
     text-align: center;
     border: solid;
-    border-radius: 10%;
+    border-radius: 10px;
+    font-size: 15px;
 }
 
+
+#restart-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#restart-button button {
+    position: relative;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    width: 5em;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    font-size: 15px;
+
+}
 /** for the correct and incorrect answers **/
 .incorrect {
     background-color: red;

@@ -6,6 +6,7 @@ let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
 let quizIntro = document.getElementById('quiz-intro');
 let quizElement = document.getElementById('quiz');
+let restartBtn = document.getElementById('restart-button');
 let nextButton = document.getElementById('next-button');
 let instructionsButton = document.getElementById('instructions-btn');
 let instructionsTextElement = document.getElementById('instructions-text');
@@ -103,6 +104,8 @@ function showQuestions() {
             button.dataset.correct = answers.correct;
         }
         button.addEventListener("click", selectAnswer);
+
+        restartBtn.addEventListener('click', runGame);
     });
 }
 
@@ -158,6 +161,7 @@ function showNextQuestion() {
  */
 function showResults() {
     resetState();
+    restartBtn.classList.add('hide');
 
     if (score <= 3) {
         questionElement.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
@@ -224,10 +228,7 @@ function joinRaffle() {
         input.oninput = () => {
             if (input.value > input.maxLength) 
                 input.value = input.value.slice(0,input.maxLength)
-    
         }
-        
-    
     })
 }
 
