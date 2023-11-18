@@ -286,6 +286,8 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - Fixed HTML error by removing placeholder text for the favourite team select option.
 - Fixed HTML error for phone input by changing label to match input id.
 - Fixed HTML errors by changing section elements to div elements that do not require titles.
+- Fixed CSS Header issue by aligning the footer to the left, otherwise the footer would not stay consistent with the raffle and questions aligning the footer to the left fixed this issue.
+- Fixed thank you section bug, after the user pressed the go back button this would result in the run game function being loaded when the user next pressed the next button, this would instantly take the user to the form, section to fix this I added the remove event listener method removing the join raffle function from the next button and only adding this once the user has answered every question.
 
 
 ## Credits 

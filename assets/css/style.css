@@ -420,6 +420,10 @@ footer a {
         left: 20%;
     }
 
+    footer {
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width: 1600px) {

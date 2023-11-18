@@ -64,6 +64,7 @@ function runGame() {
     instructionsTextElement.classList.remove('show');
     hideElements();
     hideInstructions();
+    nextButton.removeEventListener('click', joinRaffle);
     answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
     nextButton.classList.remove('hide');
@@ -172,22 +173,22 @@ function showResults() {
         nextButton.addEventListener('click', joinRaffle);
     }
 }
-function handleForm (event) {
+function handleForm(event) {
     let x = document.forms["raffle-form"]["first-name"].value;
     let j = document.forms["raffle-form"]["surname"].value;
     let y = document.forms["raffle-form"]["phone-number"].value;
     let i = document.forms["raffle-form"]["favourite-team"].value;
-    if (x == ""){
+    if (x == "") {
         alert("Name must be filled out");
         return false;
     } else if (j == "") {
         alert("Surname must be filled out");
         return false;
-    } else if (y == ""){
+    } else if (y == "") {
         alert("Please fill in your phone number");
         return false;
     }
-    else if (i == ""){
+    else if (i == "") {
         alert("Please pick your favourite team from the drop down box");
         return false;
     } else {
@@ -222,10 +223,14 @@ function raffleEnd(event) {
     contactForm.classList.remove('raffle');
     thankYou.classList.remove('hide');
     thankYou.classList.add('show');
+    backButton.addEventListener('click', runGame);
+
 
     if (favouriteTeam.value === 'None') {
         thankYou.classList.add('thank-you-none');
-        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , If you would like to take part again in the quiz just simply press the back button.`;
+        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , 
+        If you would like to take part again in the quiz just simply press the back button.`;
+
     } else {
         thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
     We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,. 
