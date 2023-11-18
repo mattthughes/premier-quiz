@@ -87,6 +87,7 @@ function startQuiz() {
  * child to add new node. if answers is correct change button to correct. 
  * add event listener which is a click method and select answer function using the select answer 
  * function
+ * Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 function showQuestions() {
     resetState();
@@ -113,7 +114,8 @@ function showQuestions() {
  * selected then finally checking if the question index is less than 
  * the length of the array if it is show another question if not 
  * start quiz.
- */
+ *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
+ */ 
 function selectAnswer(event) {
     const selectButton = event.target;
     const isCorrect = selectButton.dataset.correct === "true";
@@ -139,6 +141,7 @@ nextButton.addEventListener("click", () => {
 /** This function is adding onto the current question index and showing if the current question index is less 
  * than the questions in the array to show questions to get another question and answers from 
  * the question object otherwise show the results function.
+ *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 function showNextQuestion() {
     currentQuestionIndex++;
@@ -195,6 +198,7 @@ function handleForm(event) {
         submitButton.addEventListener("click", raffleEnd);
     }
     event.preventDefault();
+
 }
 
 //** This function is first removing the hide class and adding the show class to make this html visible which was previously hidden 
@@ -209,6 +213,22 @@ function joinRaffle() {
     contactForm.classList.add('raffle');
     quizHeading.classList.add('hide');
     submitButton.addEventListener('click', handleForm);
+
+    /** 
+     * Selecting all inputs by type number 
+     * using a for each loop checking if input value
+     * is greater than input.max length to then use the slice method
+     * Code credited to https://www.youtube.com/watch?v=DDUdZNCuwtU
+     */
+    document.querySelectorAll('input[type="number"]').forEach(input => {
+        input.oninput = () => {
+            if (input.value > input.maxLength) 
+                input.value = input.value.slice(0,input.maxLength)
+    
+        }
+        
+    
+    })
 }
 
 /**
@@ -244,6 +264,7 @@ function raffleEnd(event) {
 
 /** Setting the next button to none and using a while loop to state while the answer buttons.first child is true to then 
  * remove the child which is the first child.
+ *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 
 function resetState() {
