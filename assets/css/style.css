@@ -225,15 +225,17 @@ main {
 
 footer {
     margin-top: auto;
-    width: 100%;
+    width: 90%;
     text-align: center;
     position: relative;
     bottom: 0;
+    color: #ffffff;
 
 }
 
 footer a {
     text-decoration: none;
+    color: #ffffff;
 
 }
 
@@ -375,7 +377,7 @@ footer a {
         width: 60vw;
         position: relative;
         left: 30%;
-        bottom: 55px;
+        bottom: 60px;
     }
 
     #next-button button {
