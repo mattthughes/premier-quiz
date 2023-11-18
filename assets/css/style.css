@@ -107,8 +107,6 @@ main {
     border: solid;
     border-radius: 5%;
 }
-
-
 .nxt-btn {
     position: relative;
     align-self: center;
@@ -125,7 +123,7 @@ main {
 
 #restart-button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 #restart-button button {
@@ -397,6 +395,13 @@ footer a {
         position: relative;
         left: 30%;
         bottom: 60px;
+    }
+
+   .answer-btn:hover:not([disabled]) {
+        color:#04A777;
+   }
+    .answer-btn:disabled {
+        cursor: no-drop;
     }
 
     #next-button button {
