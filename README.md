@@ -129,6 +129,8 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Favicon Desktop
 
+![Favicon Desktop view](docs/wireframes/favicon-quiz.png)
+
 
 ### Questions 
 
