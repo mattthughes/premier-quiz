@@ -42,7 +42,6 @@ main {
     margin: 5px;
 }
 
-
 #intro-buttons {
     padding: 20px;
     border-radius: 10%;
@@ -107,6 +106,7 @@ main {
 
 .answer-btn {
     padding-bottom: 10px;
+    padding-top: 5px;
     margin-top: 20px;
     background-color: #ffffff;
     border: solid;
@@ -386,7 +386,6 @@ footer a {
         font-size: 30px;
     }
 
-
     /* Quiz styling */
     .quiz {
         font-size: 20px;
@@ -395,6 +394,7 @@ footer a {
     #quiz-intro p {
         font-size: 25px;
     }
+    /* Hover styles */
 
     #instructions-btn:hover {
         background-color: #04A777;
@@ -417,6 +417,8 @@ footer a {
         bottom: 60px;
     }
 
+    /* Hover styles */
+
     .answer-btn:hover:not([disabled]) {
         color: #04A777;
     }
@@ -432,8 +434,6 @@ footer a {
     .nxt-btn:hover {
         color: #04A777;
     }
-
-
 
     #next-button button {
         margin-left: 20px;
@@ -478,11 +478,9 @@ footer a {
     footer {
         text-align: left;
     }
-
 }
 
 @media screen and (min-width: 1600px) {
-
 
     .instructions-text {
         width: 1820px;
