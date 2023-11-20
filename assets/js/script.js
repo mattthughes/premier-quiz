@@ -23,6 +23,7 @@ let favouriteTeam = document.getElementById('favourite-team');
 let thankYouText = document.getElementById('thank-you-text');
 let thankYou = document.getElementById('thank-you');
 let backButton = document.getElementById('back-btn');
+
 // Initalise the Quiz //
 let score = 0;
 let currentQuestionIndex = 0;
@@ -31,6 +32,7 @@ hideAnswers();
 instructionsButton.addEventListener('click', showInstructions);
 quizStartButton.addEventListener('click', runGame);
 instructionStartBtn.addEventListener('click', runGame);
+
 /**Hidding  key elements */
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
@@ -90,6 +92,7 @@ function startQuiz() {
  * function
  * Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
+
 function showQuestions() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -118,7 +121,7 @@ function showQuestions() {
  * the length of the array if it is show another question if not 
  * start quiz.
  *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
- */ 
+ */
 function selectAnswer(event) {
     const selectButton = event.target;
     const isCorrect = selectButton.dataset.correct === "true";
@@ -141,6 +144,7 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
+
 /** This function is adding onto the current question index and showing if the current question index is less 
  * than the questions in the array to show questions to get another question and answers from 
  * the question object otherwise show the results function.
@@ -154,6 +158,7 @@ function showNextQuestion() {
         showResults();
     }
 }
+
 /** This function is first using the reset state and then checking what the score is
  * then i am changing the question element space by using the inner html property to change the 
  * html and doing the same for the next button and setting this to a block level element. with the last option allowing the user to go to 
@@ -180,6 +185,15 @@ function showResults() {
         nextButton.addEventListener('click', joinRaffle);
     }
 }
+
+/**
+ * targets the form and the inputs value which is achieved by the 
+ * name of the input
+ * checking if each input is an empty string to send an alert to the user
+ * otherwise access the raffle end function
+ * 
+ */
+
 function handleForm(event) {
     let x = document.forms["raffle-form"]["first-name"].value;
     let j = document.forms["raffle-form"]["surname"].value;
@@ -226,10 +240,10 @@ function joinRaffle() {
      */
     document.querySelectorAll('input[type="number"]').forEach(input => {
         input.oninput = () => {
-            if (input.value > input.maxLength) 
-                input.value = input.value.slice(0,input.maxLength)
-        }
-    })
+            if (input.value > input.maxLength)
+                input.value = input.value.slice(0, input.maxLength);
+        };
+    });
 }
 
 /**
