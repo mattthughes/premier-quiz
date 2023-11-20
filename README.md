@@ -254,11 +254,32 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ### How to deploy 
 
+This site is deployed using GitHub Pages - [Premier-Quiz](https://github.com/mattthughes/premier-quiz)
+
+To deploy the site using GitHub Pages follow the following steps:
+
+1. Login or signup to GitHub.
+2. Go to the repository for this project [mattthughes/premier-quiz](https://github.com/mattthughes/premier-quiz)
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch changing this from root to main and then press save.
+6. After this step the site has now been deployed, this can take a few minutes for the site to become avaliable to view, this will allow you to see your changes on the deployed site.
+
 ### Local Deployment 
 
 #### How to Fork
 
+1. Log in or sign up to GitHub.
+2. Go to the repository for this project [mattthughes/premier-quiz](https://github.com/mattthughes/premier-quiz)
+3. Click the Fork button on the top right corner to fork the project.
+
 #### How to clone
+
+1. Log in or sign up to GitHub.
+2. Go to the repository for this project [mattthughes/premier-quiz](https://github.com/mattthughes/premier-quiz)
+3. Click on the code button and select whether you would like to clone with HTTPS,SSH or GitHub Cli and copy the link shown.
+4. Next open the terminal in the code editor and change the current working directory to the location you want to use for the cloned directory
+5. Type 'git clone' into the terminal and paste the copied links and press enter.
 
 ## Testing
 
