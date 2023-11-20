@@ -111,7 +111,15 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Mobile 
 
+* This is a wireframe of the mobile version of the quiz
+  
+![Mobile wireframe quiz](docs/wireframes/mobile-quiz-wireframe.png)
+
 #### Desktop
+
+* This is a wireframe of the desktop version of the quiz.
+
+![Website Wireframe quiz](docs/wireframes/quiz-wireframe-website.png)
 
 ## Key Features 
 

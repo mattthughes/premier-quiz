@@ -361,6 +361,7 @@ footer a {
         font-size: 20px;
     }
 
+    /* Raffle styling */
     #raffle-inputs label {
         font-size: 16px;
     }
@@ -435,9 +436,13 @@ footer a {
         color: #04A777;
     }
 
+    /* Game area styles continued */
+
     #next-button button {
         margin-left: 20px;
     }
+
+    /* Raffle styles */
 
     .raffle-heading h2 {
         font-size: 25px;
@@ -465,6 +470,8 @@ footer a {
         padding-top: 0;
     }
 
+    /* Raffle end styles */
+
     .thank-you {
         margin-left: 30px;
         position: relative;
@@ -479,7 +486,7 @@ footer a {
         text-align: left;
     }
 }
-
+/* Media query for larger desktops */
 @media screen and (min-width: 1600px) {
 
     .instructions-text {
