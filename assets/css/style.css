@@ -89,6 +89,11 @@ main {
     justify-content: center;
 }
 
+#question-tracker {
+    display: flex;
+    justify-content: center;
+}
+
 /** Question area styling **/
 #questions {
     text-align: center;

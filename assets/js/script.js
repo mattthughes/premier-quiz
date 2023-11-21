@@ -6,6 +6,7 @@ let questionElement = document.getElementById('questions');
 let answerButtons = document.getElementById('answer-buttons');
 let quizIntro = document.getElementById('quiz-intro');
 let quizElement = document.getElementById('quiz');
+let questionTracker = document.getElementById('question-tracker');
 let restartBtn = document.getElementById('restart-button');
 let nextButton = document.getElementById('next-button');
 let instructionsButton = document.getElementById('instructions-btn');
@@ -99,7 +100,9 @@ console.log(questions);
 function showQuestions() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
-    questionElement.innerText = questionNum + "." + currentQuestion.question;
+    let questionNum = currentQuestionIndex + 1;
+    questionTracker.innerText = "Question " + questionNum + " out of " + questions.length;
+    questionElement.innerText = currentQuestion.question;
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement('button');
         button.innerText = answers.text;
