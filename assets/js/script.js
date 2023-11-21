@@ -52,29 +52,27 @@ function hideAnswers() {
 function hideElements() {
     instructionsButton.classList.add('hide');
     quizIntro.classList.add('hide');
+    restartBtn.classList.add('hide');
     quizElement.classList.add('hide');
 }
 /**Hidding and unhiding key elements */
 function showInstructions() {
     instructionsTextElement.classList.remove('hide');
-    instructionsTextElement.classList.add('show', 'quiz-instructions');
+    instructionsTextElement.classList.add('quiz-instructions');
     hideElements();
 }
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
 function runGame() {
     questionElement.classList.remove('hide');
-    questionElement.classList.add('show');
     quizHeading.classList.add('game-heading');
-    instructionsTextElement.classList.remove('show');
+    instructionsTextElement.classList.add('hide');
     hideElements();
     hideInstructions();
     nextButton.removeEventListener('click', joinRaffle);
     answerButtons.classList.remove('hide');
     answerButtons.classList.add('show');
     nextButton.classList.remove('hide');
-    nextButton.classList.add('add');
     gameArea.classList.remove('hide');
-    gameArea.classList.add('show');
     startQuiz();
 }
 /**Setting up quiz functionality by setting default parameters */
@@ -113,7 +111,7 @@ function showQuestions() {
         }
         button.addEventListener("click", selectAnswer);
 
-        restartBtn.addEventListener('click', runGame);
+        
     });
 }
 
@@ -161,6 +159,8 @@ nextButton.addEventListener("click", () => {
  *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 function showNextQuestion() {
+    restartBtn.classList.remove('hide');
+    restartBtn.addEventListener('click', runGame);
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestions();
@@ -233,10 +233,7 @@ function handleForm(event) {
 // After this the function is hidding the question and answer elements to showcase the correct elements this will only be shown if a user gets ever answer correct **/
 function joinRaffle() {
     contactForm.classList.remove('hide');
-    contactForm.classList.add('show');
-    questionElement.classList.remove('show');
     questionElement.classList.add('hide');
-    answerButtons.classList.remove('show');
     answerButtons.classList.add('hide');
     contactForm.classList.add('raffle');
     quizHeading.classList.add('hide');
@@ -263,11 +260,9 @@ function joinRaffle() {
  * 
  */
 function raffleEnd(event) {
-    contactForm.classList.remove('show');
     contactForm.classList.add('hide');
     contactForm.classList.remove('raffle');
     thankYou.classList.remove('hide');
-    thankYou.classList.add('show');
     backButton.addEventListener('click', runGame);
 
 

@@ -132,11 +132,6 @@ main {
 }
 
 
-#restart-button {
-    display: flex;
-    justify-content: center;
-}
-
 #restart-button button {
     position: relative;
     text-align: center;
@@ -434,11 +429,11 @@ footer a {
     }
 
     #restart-button button:hover {
-        color: #04A777;
+        color: #04a777;
     }
 
     .nxt-btn:hover {
-        color: #04A777;
+        color: #04a777;
     }
 
     /* Game area styles continued */
