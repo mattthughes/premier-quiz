@@ -34,6 +34,12 @@ instructionsButton.addEventListener('click', showInstructions);
 quizStartButton.addEventListener('click', runGame);
 instructionStartBtn.addEventListener('click', runGame);
 
+// Button styles
+instructionStartBtn.classList.add('intro-btns');
+quizStartButton.classList.add('intro-btns');
+instructionsButton.classList.add('intro-btns');
+restartBtn.classList.add('restart-button');
+
 /**Hidding  key elements */
 function hideInstructions() {
     instructionsTextElement.classList.add('hide');
@@ -111,7 +117,7 @@ function showQuestions() {
         }
         button.addEventListener("click", selectAnswer);
 
-        
+
     });
 }
 
