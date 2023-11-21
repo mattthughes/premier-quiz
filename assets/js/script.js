@@ -79,10 +79,13 @@ function runGame() {
 /**Setting up quiz functionality by setting default parameters */
 function startQuiz() {
     currentQuestionIndex = 0;
+    shuffleQuestions(questions);
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestions();
 }
+
+console.log(questions);
 /** Get current question which is questions array and the current question index 
  * Set question number to the question index and add one
  * set the question element text to the number of the question and the current question
@@ -96,7 +99,6 @@ function startQuiz() {
 function showQuestions() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNum = currentQuestionIndex + 1;
     questionElement.innerText = questionNum + "." + currentQuestion.question;
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement('button');
@@ -110,6 +112,11 @@ function showQuestions() {
 
         restartBtn.addEventListener('click', runGame);
     });
+}
+
+function shuffleQuestions(array) {
+    array.sort(() => Math.floor(Math.random() - 0.5));
+    console.log(array);
 }
 
 /**First creates a variable select button then
