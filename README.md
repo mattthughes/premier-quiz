@@ -36,7 +36,11 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [Answers Desktop View](#answers-desktop-view)
     - [Correct and wrong answers](#correct-and-wrong-answers)
       - [Mobile view correct and wrong answers](#mobile-view-correct-and-wrong-answers)
+      - [Correct Answers](#correct-answers)
+      - [Wrong Answers](#wrong-answers)
       - [Desktop view correct and wrong answers](#desktop-view-correct-and-wrong-answers)
+      - [Correct Answers](#correct-answers-1)
+      - [Wrong Answers](#wrong-answers-1)
     - [Next  button](#next--button)
       - [Mobile next button view](#mobile-next-button-view)
       - [Desktop next  button view](#desktop-next--button-view)
@@ -56,7 +60,6 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [How to Fork](#how-to-fork)
       - [How to clone](#how-to-clone)
   - [Testing](#testing)
-    - [Solved Bugs](#solved-bugs)
   - [Credits](#credits)
     - [Media](#media)
       - [Imagery](#imagery)
@@ -141,7 +144,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Questions Desktop view
 
-![Desktop view questions](docs/wireframes/question-desktop.png)
+![Desktop view questions](docs/wireframes/question-element-desktop.png)
 
 ### Instructions
 
@@ -189,14 +192,19 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Mobile view correct and wrong answers
 
+#### Correct Answers 
+
 ![Correct answers mobile view](docs/wireframes/correct-answer-mobile.png)
 
+#### Wrong Answers 
 ![Wrong answers mobile view](docs/wireframes/wrong-answer-mobile.png)
 
 #### Desktop view correct and wrong answers 
 
-![Correct answers desktop view](docs/wireframes/correct-answer-desktop.png)
+#### Correct Answers
+![Correct answers desktop view](docs/wireframes/correct-answer-mobile.png)
 
+#### Wrong Answers 
 ![Wrong answers desktop view](docs/wireframes/wrong-answer-desktop.png)
 
 ### Next  button

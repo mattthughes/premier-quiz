@@ -42,11 +42,13 @@ main {
     margin: 5px;
 }
 
+/* intro buttons div element */
 #intro-buttons {
     padding: 20px;
     border-radius: 10%;
 }
 
+/* intro btns element*/
 .intro-btns {
     width: 7em;
     margin-bottom: 10px;
@@ -219,7 +221,7 @@ main {
 #submit-btn {
     background-color: #ffffff;
     border: solid;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 /** Raffle end styles **/
