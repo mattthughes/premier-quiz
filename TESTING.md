@@ -71,6 +71,7 @@
 - Fixed thank you section bug, after the user pressed the go back button this would result in the run game function being loaded when the user next pressed the next button, this would instantly take the user to the form, section to fix this I added the remove event listener method removing the join raffle function from the next button and only adding this once the user has answered every question.
 - Solved bug where user could click on the quiz area to reset the questions, to fix this I created a div which holds both the restart and next button element which fixed this issue.
 - Changed handle form function from finding the squarebracket and the name as there was a warning from the javascript validator, Instead I used dot notation to remove these warnings.
+- Fixed play again bug, after submitting the form if the user played the quiz again and pressed play again, the raffle would be shown rather than the questions, which was not the expected outcome, to fix this I removed the join raffle event listener in the raffle end function which fixed this issue.
 
 
 ### Known Bugs

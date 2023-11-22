@@ -277,6 +277,7 @@ function raffleEnd(event) {
     thankYouText.classList.remove("hide");
     backButton.classList.add("back-btn");
     backButton.addEventListener("click", runGame);
+    resultsBtn.removeEventListener('click', joinRaffle);
 
     if (favouriteTeam.value === "None") {
         thankYou.classList.add("thank-you-none");
