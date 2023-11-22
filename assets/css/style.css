@@ -67,7 +67,7 @@ main {
 
 #game-area {
     background-color: #ffdead;
-    height: 70vh;
+    height: 420px;
     position: relative;
     bottom: 40px;
 }
@@ -270,10 +270,11 @@ footer a {
     color: #ffffff;
 }
 
+
+
 /** Media query for smaller devices*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 390px) {
     #game-area {
-        width: 680px;
         margin-left: 10px;
     }
 
@@ -320,7 +321,7 @@ footer a {
     #game-area {
         position: relative;
         width: 96vw;
-        height: 60vh;
+        height: 600px;
     }
 
     #questions {
@@ -362,9 +363,6 @@ footer a {
 }
 
 @media screen and (min-width: 1000px) {
-    #game-area {
-        height: 70vh;
-    }
 
     #question-tracker {
         font-size: 20px;
@@ -404,7 +402,6 @@ footer a {
         position: relative;
         left: 30%;
         bottom: 60px;
-        height: 65vh;
     }
 
     /* Hover styles */
@@ -500,10 +497,6 @@ footer a {
 @media screen and (min-width: 1600px) {
     .instructions-text {
         width: 1820px;
-    }
-
-    #game-area {
-        height: 70vh;
     }
 
     #results {

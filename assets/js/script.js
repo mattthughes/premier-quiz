@@ -250,6 +250,7 @@ function joinRaffle() {
     contactForm.classList.add("raffle");
     quizHeading.classList.add("hide");
     submitButton.addEventListener("click", handleForm);
+    resultsBtn.removeEventListener('click', joinRaffle);
 
     /**
      * Selecting all inputs by type number
@@ -265,7 +266,7 @@ function joinRaffle() {
     });
 }
 
-function resetForm () {
+function resetForm() {
     document.getElementById('raffle').reset();
 }
 
@@ -282,8 +283,8 @@ function raffleEnd(event) {
     thankYouText.classList.remove("hide");
     backButton.classList.add("back-btn");
     backButton.addEventListener("click", runGame);
-    resultsBtn.removeEventListener('click', joinRaffle);
-    
+
+
 
     if (favouriteTeam.value === "None") {
         thankYou.classList.add("thank-you-none");
@@ -291,7 +292,7 @@ function raffleEnd(event) {
         If you would like to take part again in the quiz just simply press the back button.`;
     } else {
         thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
-    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,. 
+    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,
     If you would like to take the quiz again simply just press the back button.`;
         thankYou.classList.add("thank-you");
     }
