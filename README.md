@@ -44,9 +44,19 @@ Premier League greatest facts is a quiz designed around the best league in the w
     - [Next  button](#next--button)
       - [Mobile next button view](#mobile-next-button-view)
       - [Desktop next  button view](#desktop-next--button-view)
+    - [Results screen](#results-screen)
+      - [Mobile less than 3 score](#mobile-less-than-3-score)
+      - [Mobile less than or 9 score](#mobile-less-than-or-9-score)
+      - [Mobile all questions correct](#mobile-all-questions-correct)
+      - [Desktop less than 3 score](#desktop-less-than-3-score)
+      - [Desktop less than or 9 score](#desktop-less-than-or-9-score)
+      - [Desktop all questions correct](#desktop-all-questions-correct)
     - [Contact page](#contact-page)
       - [Mobile view contact page](#mobile-view-contact-page)
       - [Desktop view contact page](#desktop-view-contact-page)
+    - [Thank you Page](#thank-you-page)
+      - [Mobile View Thank you page](#mobile-view-thank-you-page)
+      - [Desktop view Thank you page](#desktop-view-thank-you-page)
     - [Error 404 page](#error-404-page)
       - [Mobile view error page view](#mobile-view-error-page-view)
       - [Desktop view error page view](#desktop-view-error-page-view)
@@ -154,13 +164,13 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ![Mobile view instructions button](docs/wireframes/instructions-button-mobile.png)
 
-![Mobile view instructions](docs/wireframes/instructions-mobile.png)
+![Mobile view instructions](docs/wireframes/instructions-text-mobile.png)
 
 #### Instructions Desktop view
 
-![Desktop view instructions button](docs/wireframes/instructions-button.png)
+![Desktop view instructions button](docs/wireframes/instructions-button-desktop.png)
 
-![Desktop view instructions](docs/wireframes/instructions-desktop.png)
+![Desktop view instructions](docs/wireframes/instructions-text-desktop.png)
 
 ### Play button 
 
@@ -197,12 +207,12 @@ Premier League greatest facts is a quiz designed around the best league in the w
 ![Correct answers mobile view](docs/wireframes/correct-answer-mobile.png)
 
 #### Wrong Answers 
-![Wrong answers mobile view](docs/wireframes/wrong-answer-mobile.png)
+![Wrong answers mobile view](docs/wireframes/wrong-answer-desktop.png)
 
 #### Desktop view correct and wrong answers 
 
 #### Correct Answers
-![Correct answers desktop view](docs/wireframes/correct-answer-mobile.png)
+![Correct answers desktop view](docs/wireframes/correct-answer-desktop.png)
 
 #### Wrong Answers 
 ![Wrong answers desktop view](docs/wireframes/wrong-answer-desktop.png)
@@ -219,6 +229,37 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 ![Desktop view, Next button](docs/wireframes/next-button-desktop.png)
 
+### Results screen 
+
+* This element will show the user which score they achieved where there will be three conditions which will depend on if the user achieved a specific score to be activated.
+
+#### Mobile less than 3 score 
+
+![Mobile view less than 3](docs/wireframes/score-less-than-three-mobile.png)
+
+#### Mobile less than or 9 score
+
+![Mobile view score less than or equal to 9](docs/wireframes/score-less-than-nine-mobile.png)
+
+#### Mobile all questions correct 
+
+![Mobile view all questions correct](docs/wireframes/join-raffle-mobile.png)
+
+#### Desktop less than 3 score
+
+![Desktop view less than 3](docs/wireframes/score-less-than-three-desktop.png)
+
+#### Desktop less than or 9 score
+
+![Desktop view less than or equal to 9](docs/wireframes/score-less-than-nine-desktop.png)
+
+#### Desktop all questions correct
+
+![Desktop view all questions correct](docs/wireframes/join-raffle-dekstop.png)
+
+
+
+
 ### Contact page
 
 * This element wil be shown to users if they get every question correct, this contact page will allow the user via a drop down to select there favourite team enter there email and first and surname as well once submitting this form it will load an extra page thanking the user for there participation in the quiz, while also entering them into a raffel for a chance to visit a live Premier league game of there choosing.
@@ -229,7 +270,20 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 #### Desktop view contact page 
 
-![Desktop view raffle page](docs/wireframes/raffle-desktop.png)
+![Desktop view raffle page](docs/wireframes/raffle-form-desktop.png)
+
+### Thank you Page 
+
+* This element will be shown to only the users that have got all 10 questions correct and have completed the raffle, which will tell the user what data they have inputted adding more interactivity to the quiz, while also giving the user a back button to play the quiz again.
+
+#### Mobile View Thank you page
+
+![Mobile view thank you page](docs/wireframes/thank-you-mobile.png)
+
+#### Desktop view Thank you page
+
+![Desktop view thank you page](docs/wireframes/thank-you-desktop.png)
+
 
 ### Error 404 page
 
