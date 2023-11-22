@@ -217,10 +217,10 @@ function showResults() {
  */
 
 function handleForm(event) {
-  let x = document.forms["raffle-form"]["first-name"].value;
-  let j = document.forms["raffle-form"]["surname"].value;
-  let y = document.forms["raffle-form"]["phone-number"].value;
-  let i = document.forms["raffle-form"]["favourite-team"].value;
+  let x = document.forms["raffle-form"].fname.value;
+  let j = document.forms["raffle-form"].surnamevalue;
+  let y = document.forms["raffle-form"].contact.value;
+  let i = document.forms["raffle-form"].team.value;
   if (x == "") {
     alert("Name must be filled out");
     return false;
