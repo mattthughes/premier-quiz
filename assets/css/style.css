@@ -329,6 +329,12 @@ footer a {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    #game-area {
+        height: 65vh;
+    }
+}
+
 /* Media query for smaller desktop devices */
 @media screen and (min-width: 1200px) {
 
