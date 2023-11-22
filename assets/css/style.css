@@ -12,10 +12,13 @@ body {
     color: black;
 }
 
+.heading a {
+    text-decoration: none;
+}
+
 h1,
 h2 {
     font-family: "teko", "san-serif";
-    text-decoration: solid;
     letter-spacing: 2px;
     color: #04a777;
 }

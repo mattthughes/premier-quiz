@@ -43,56 +43,56 @@ restartBtn.classList.add("restart-button");
 
 /**Hidding  key elements */
 function hideInstructions() {
-  instructionsTextElement.classList.add("hide");
-  gameArea.classList.add("hide");
-  contactForm.classList.add("hide");
-  backButton.classList.add("hide");
-  thankYou.classList.add("hide");
-  results.classList.add("hide");
-  resultsText.classList.add("hide");
-  resultsBtn.classList.add("hide");
+    instructionsTextElement.classList.add("hide");
+    gameArea.classList.add("hide");
+    contactForm.classList.add("hide");
+    backButton.classList.add("hide");
+    thankYou.classList.add("hide");
+    results.classList.add("hide");
+    resultsText.classList.add("hide");
+    resultsBtn.classList.add("hide");
 }
 /**Hidding  key elements */
 function hideAnswers() {
-  answerButtons.classList.add("hide");
-  questionElement.classList.add("hide");
-  nextButton.classList.add("hide");
+    answerButtons.classList.add("hide");
+    questionElement.classList.add("hide");
+    nextButton.classList.add("hide");
 }
 /**Hidding  key elements */
 function hideElements() {
-  instructionsButton.classList.add("hide");
-  quizIntro.classList.add("hide");
-  restartBtn.classList.add("hide");
-  quizElement.classList.add("hide");
+    instructionsButton.classList.add("hide");
+    quizIntro.classList.add("hide");
+    restartBtn.classList.add("hide");
+    quizElement.classList.add("hide");
 }
 /**Hidding and unhiding key elements */
 function showInstructions() {
-  instructionsTextElement.classList.remove("hide");
-  instructionsTextElement.classList.add("quiz-instructions");
-  hideElements();
+    instructionsTextElement.classList.remove("hide");
+    instructionsTextElement.classList.add("quiz-instructions");
+    hideElements();
 }
 /** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
 function runGame() {
-  questionElement.classList.remove("hide");
-  quizHeading.classList.add("game-heading");
-  quizHeading.classList.remove("hide");
-  instructionsTextElement.classList.add("hide");
-  hideElements();
-  hideInstructions();
-  nextButton.removeEventListener("click", joinRaffle);
-  answerButtons.classList.remove("hide");
-  answerButtons.classList.add("show");
-  nextButton.classList.remove("hide");
-  gameArea.classList.remove("hide");
-  startQuiz();
+    questionElement.classList.remove("hide");
+    quizHeading.classList.add("game-heading");
+    quizHeading.classList.remove("hide");
+    instructionsTextElement.classList.add("hide");
+    hideElements();
+    hideInstructions();
+    nextButton.removeEventListener("click", joinRaffle);
+    answerButtons.classList.remove("hide");
+    answerButtons.classList.add("show");
+    nextButton.classList.remove("hide");
+    gameArea.classList.remove("hide");
+    startQuiz();
 }
 /**Setting up quiz functionality by setting default parameters */
 function startQuiz() {
-  currentQuestionIndex = 0;
-  shuffleQuestions(questions);
-  score = 0;
-  nextButton.innerHTML = "Next";
-  showQuestions();
+    currentQuestionIndex = 0;
+    shuffleQuestions(questions);
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestions();
 }
 
 console.log(questions);
@@ -107,27 +107,27 @@ console.log(questions);
  */
 
 function showQuestions() {
-  resetState();
-  let currentQuestion = questions[currentQuestionIndex];
-  let questionNum = currentQuestionIndex + 1;
-  questionTracker.innerText =
-    "Question " + questionNum + " out of " + questions.length;
-  questionElement.innerText = currentQuestion.question;
-  currentQuestion.answers.forEach((answers) => {
-    const button = document.createElement("button");
-    button.innerText = answers.text;
-    button.classList.add("answer-btn");
-    answerButtons.appendChild(button);
-    if (answers.correct) {
-      button.dataset.correct = answers.correct;
-    }
-    button.addEventListener("click", selectAnswer);
-  });
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNum = currentQuestionIndex + 1;
+    questionTracker.innerText =
+        "Question " + questionNum + " out of " + questions.length;
+    questionElement.innerText = currentQuestion.question;
+    currentQuestion.answers.forEach((answers) => {
+        const button = document.createElement("button");
+        button.innerText = answers.text;
+        button.classList.add("answer-btn");
+        answerButtons.appendChild(button);
+        if (answers.correct) {
+            button.dataset.correct = answers.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
 }
 
 function shuffleQuestions(array) {
-  array.sort(() => Math.floor(Math.random() - 0.5));
-  console.log(array);
+    array.sort(() => Math.floor(Math.random() - 0.5));
+    console.log(array);
 }
 
 /**First creates a variable select button then
@@ -141,26 +141,26 @@ function shuffleQuestions(array) {
  *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 function selectAnswer(event) {
-  const selectButton = event.target;
-  const isCorrect = selectButton.dataset.correct === "true";
-  if (isCorrect) {
-    score++;
-    selectButton.classList.add("correct");
-  } else {
-    selectButton.classList.add("incorrect");
-  }
-  nextButton.style.display = "block";
-  nextButton.classList.add("nxt-btn");
-  Array.from(answerButtons.children).forEach((button) => {
-    button.disabled = true;
-  });
+    const selectButton = event.target;
+    const isCorrect = selectButton.dataset.correct === "true";
+    if (isCorrect) {
+        score++;
+        selectButton.classList.add("correct");
+    } else {
+        selectButton.classList.add("incorrect");
+    }
+    nextButton.style.display = "block";
+    nextButton.classList.add("nxt-btn");
+    Array.from(answerButtons.children).forEach((button) => {
+        button.disabled = true;
+    });
 }
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length) {
-    showNextQuestion();
-  } else {
-    startQuiz();
-  }
+    if (currentQuestionIndex < questions.length) {
+        showNextQuestion();
+    } else {
+        startQuiz();
+    }
 });
 
 /** This function is adding onto the current question index and showing if the current question index is less
@@ -169,14 +169,14 @@ nextButton.addEventListener("click", () => {
  *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
 function showNextQuestion() {
-  restartBtn.classList.remove("hide");
-  restartBtn.addEventListener("click", runGame);
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    showQuestions();
-  } else {
-    showResults();
-  }
+    restartBtn.classList.remove("hide");
+    restartBtn.addEventListener("click", runGame);
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestions();
+    } else {
+        showResults();
+    }
 }
 
 /** This function is first using the reset state and then checking what the score is
@@ -185,27 +185,27 @@ function showNextQuestion() {
  * another screen to fill out the form by adding an event listener with the parameters click and join raffle function.
  */
 function showResults() {
-  resetState();
-  restartBtn.classList.add("hide");
-  gameArea.classList.add("hide");
-  questionElement.classList.add("hide");
-  results.classList.remove("hide");
-  resultsText.classList.remove("hide");
-  resultsBtn.classList.remove("hide");
-  resultsBtn.addEventListener("click", runGame);
+    resetState();
+    restartBtn.classList.add("hide");
+    gameArea.classList.add("hide");
+    questionElement.classList.add("hide");
+    results.classList.remove("hide");
+    resultsText.classList.remove("hide");
+    resultsBtn.classList.remove("hide");
+    resultsBtn.addEventListener("click", runGame);
 
-  if (score <= 3) {
-    resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
-    resultsBtn.innerHTML = "Play Again";
-  } else if (score <= 9) {
-    resultsText.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
-    resultsBtn.innerHTML = "Play Again";
-  } else if (score > 9) {
-    resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
+    if (score <= 3) {
+        resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
+        resultsBtn.innerHTML = "Play Again";
+    } else if (score <= 9) {
+        resultsText.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
+        resultsBtn.innerHTML = "Play Again";
+    } else if (score > 9) {
+        resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
 
-    resultsBtn.innerHTML = "Next";
-    resultsBtn.addEventListener("click", joinRaffle);
-  }
+        resultsBtn.innerHTML = "Next";
+        resultsBtn.addEventListener("click", joinRaffle);
+    }
 }
 
 /**
@@ -217,51 +217,51 @@ function showResults() {
  */
 
 function handleForm(event) {
-  let x = document.forms["raffle-form"].fname.value;
-  let j = document.forms["raffle-form"].surnamevalue;
-  let y = document.forms["raffle-form"].contact.value;
-  let i = document.forms["raffle-form"].team.value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  } else if (j == "") {
-    alert("Surname must be filled out");
-    return false;
-  } else if (y == "") {
-    alert("Please fill in your phone number");
-    return false;
-  } else if (i == "") {
-    alert("Please pick your favourite team from the drop down box");
-    return false;
-  } else {
-    submitButton.addEventListener("click", raffleEnd);
-  }
-  event.preventDefault();
+    let x = document.forms["raffle-form"].fname.value;
+    let j = document.forms["raffle-form"].surnamevalue;
+    let y = document.forms["raffle-form"].contact.value;
+    let i = document.forms["raffle-form"].team.value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    } else if (j == "") {
+        alert("Surname must be filled out");
+        return false;
+    } else if (y == "") {
+        alert("Please fill in your phone number");
+        return false;
+    } else if (i == "") {
+        alert("Please pick your favourite team from the drop down box");
+        return false;
+    } else {
+        submitButton.addEventListener("click", raffleEnd);
+    }
+    event.preventDefault();
 }
 
 //** This function is first removing the hide class and adding the show class to make this html visible which was previously hidden
 // After this the function is hidding the question and answer elements to showcase the correct elements this will only be shown if a user gets ever answer correct **/
 function joinRaffle() {
-  contactForm.classList.remove("hide");
-  questionElement.classList.add("hide");
-  answerButtons.classList.add("hide");
-  gameArea.classList.add("hide");
-  contactForm.classList.add("raffle");
-  quizHeading.classList.add("hide");
-  submitButton.addEventListener("click", handleForm);
+    contactForm.classList.remove("hide");
+    questionElement.classList.add("hide");
+    answerButtons.classList.add("hide");
+    gameArea.classList.add("hide");
+    contactForm.classList.add("raffle");
+    quizHeading.classList.add("hide");
+    submitButton.addEventListener("click", handleForm);
 
-  /**
-   * Selecting all inputs by type number
-   * using a for each loop checking if input value
-   * is greater than input.max length to then use the slice method
-   * Code credited to https://www.youtube.com/watch?v=DDUdZNCuwtU
-   */
-  document.querySelectorAll('input[type="number"]').forEach((input) => {
-    input.oninput = () => {
-      if (input.value > input.maxLength)
-        input.value = input.value.slice(0, input.maxLength);
-    };
-  });
+    /**
+     * Selecting all inputs by type number
+     * using a for each loop checking if input value
+     * is greater than input.max length to then use the slice method
+     * Code credited to https://www.youtube.com/watch?v=DDUdZNCuwtU
+     */
+    document.querySelectorAll('input[type="number"]').forEach((input) => {
+        input.oninput = () => {
+            if (input.value > input.maxLength)
+                input.value = input.value.slice(0, input.maxLength);
+        };
+    });
 }
 
 /**
@@ -271,26 +271,26 @@ function joinRaffle() {
  *
  */
 function raffleEnd(event) {
-  contactForm.classList.add("hide");
-  contactForm.classList.remove("raffle");
-  thankYou.classList.remove("hide");
-  thankYouText.classList.remove("hide");
-  backButton.classList.add("back-btn");
-  backButton.addEventListener("click", runGame);
+    contactForm.classList.add("hide");
+    contactForm.classList.remove("raffle");
+    thankYou.classList.remove("hide");
+    thankYouText.classList.remove("hide");
+    backButton.classList.add("back-btn");
+    backButton.addEventListener("click", runGame);
 
-  if (favouriteTeam.value === "None") {
-    thankYou.classList.add("thank-you-none");
-    thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , 
+    if (favouriteTeam.value === "None") {
+        thankYou.classList.add("thank-you-none");
+        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , 
         If you would like to take part again in the quiz just simply press the back button.`;
-  } else {
-    thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
+    } else {
+        thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
     We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,. 
     If you would like to take the quiz again simply just press the back button.`;
-    thankYou.classList.add("thank-you");
-  }
-  backButton.classList.remove("hide");
-  backButton.classList.add("show");
-  event.preventDefault();
+        thankYou.classList.add("thank-you");
+    }
+    backButton.classList.remove("hide");
+    backButton.classList.add("show");
+    event.preventDefault();
 }
 
 /** Setting the next button to none and using a while loop to state while the answer buttons.first child is true to then
@@ -299,8 +299,8 @@ function raffleEnd(event) {
  */
 
 function resetState() {
-  nextButton.style.display = "none";
-  while (answerButtons.firstChild) {
-    answerButtons.removeChild(answerButtons.firstChild);
-  }
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }

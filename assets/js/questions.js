@@ -1,5 +1,5 @@
 
- export const questions = [
+export const questions = [
     {
         question: "Who scored the first goal in the Premier League?",
 
@@ -32,6 +32,7 @@
             { text: "13", correct: true },
         ]
     },
+
     {
         question: "Who is the Premier League record goal scorer?",
 
@@ -43,8 +44,6 @@
         ]
 
     },
-
-
 
     {
         question: "How many points did Derby County score in the 2007/2008 season?",
