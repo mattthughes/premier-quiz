@@ -203,7 +203,7 @@ function showResults() {
   } else if (score > 9) {
     resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
 
-    resultsBtn.innerHTML = "next";
+    resultsBtn.innerHTML = "Next";
     resultsBtn.addEventListener("click", joinRaffle);
   }
 }
@@ -274,6 +274,8 @@ function raffleEnd(event) {
   contactForm.classList.add("hide");
   contactForm.classList.remove("raffle");
   thankYou.classList.remove("hide");
+  thankYouText.classList.remove("hide");
+  backButton.classList.add("back-btn");
   backButton.addEventListener("click", runGame);
 
   if (favouriteTeam.value === "None") {
