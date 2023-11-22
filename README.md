@@ -293,7 +293,7 @@ To deploy the site using GitHub Pages follow the following steps:
 
 ## Testing
 
-I tested this project extens
+I tested this project extensively testing all elements making sure they had the correct outcome while also documenting all solved bugs and how they were fixed, all testing content can be viewed in [TestingMd] (https://github.com/mattthughes/premier-quiz/blob/main/TESTING.md)
 
 ### Solved Bugs
 
