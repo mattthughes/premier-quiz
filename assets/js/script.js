@@ -93,6 +93,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestions();
+    resetForm();
 }
 
 console.log(questions);
@@ -264,6 +265,10 @@ function joinRaffle() {
     });
 }
 
+function resetForm () {
+    document.getElementById('raffle').reset();
+}
+
 /**
  * Raffle end function hides contact form and shows the thank you screen
  * the function checks if the user selects none to then showcase the thank you text without the favourite team
@@ -278,6 +283,7 @@ function raffleEnd(event) {
     backButton.classList.add("back-btn");
     backButton.addEventListener("click", runGame);
     resultsBtn.removeEventListener('click', joinRaffle);
+    
 
     if (favouriteTeam.value === "None") {
         thankYou.classList.add("thank-you-none");

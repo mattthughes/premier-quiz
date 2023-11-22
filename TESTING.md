@@ -72,6 +72,7 @@
 - Solved bug where user could click on the quiz area to reset the questions, to fix this I created a div which holds both the restart and next button element which fixed this issue.
 - Changed handle form function from finding the squarebracket and the name as there was a warning from the javascript validator, Instead I used dot notation to remove these warnings.
 - Fixed play again bug, after submitting the form if the user played the quiz again and pressed play again, the raffle would be shown rather than the questions, which was not the expected outcome, to fix this I removed the join raffle event listener in the raffle end function which fixed this issue.
+- Fixed a bug where when replaying the quiz, the form would remain filled in rather than empty which is how the form was orginally designed, to fix this I created a function called reset form and got the forms id, I then used the .reset method, then placed this function in the startQuiz function to ensure the user was still able to submit the form.
 
 
 ### Known Bugs
