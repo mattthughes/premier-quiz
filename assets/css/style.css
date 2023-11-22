@@ -146,11 +146,28 @@ main {
 }
 
 /** Results screen styles **/
-.results-screen {
+#results {
     height: 20vh;
     background-color: #ffdead;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
     margin: 5px;
+}
+
+#results-button {
+    display: flex;
+    justify-content: center;
+}
+
+#results-button button {
+    background-color: #ffffff;
+    width: 5em;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+
 }
 
 /** Raffle styles */
@@ -331,7 +348,11 @@ footer a {
 
 @media screen and (min-width: 1000px) {
     #game-area {
-        height: 65vh;
+        height: 70vh;
+    }
+
+    #results {
+        width: 1000px;
     }
 }
 
@@ -364,7 +385,7 @@ footer a {
         position: relative;
         left: 30%;
         bottom: 60px;
-        height: 85vh;
+        height: 65vh;
     }
 
     /* Hover styles */
@@ -389,6 +410,14 @@ footer a {
 
     #next-button button {
         margin-left: 20px;
+    }
+
+    #results {
+        position: relative;
+        min-width: 1000px;
+        left: 20%;
+        text-align: center;
+        height: 10vh;
     }
 
     /* Raffle styles */
@@ -444,6 +473,17 @@ footer a {
 
     #game-area {
         height: 70vh;
+    }
+
+    #results {
+        min-width: 1200px;
+        position: relative;
+        left: 22%;
+    }
+
+    #results-button button {
+        width: 7em;
+        margin-top: 20px;
     }
 
     .thank-you {
