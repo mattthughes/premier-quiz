@@ -20,7 +20,7 @@ h1,
 h2 {
     font-family: "teko", "san-serif";
     letter-spacing: 2px;
-    color: #ff0000;;
+    color: #04a777;
 }
 
 main {
@@ -262,12 +262,12 @@ footer {
     text-align: center;
     position: relative;
     bottom: 0;
-    color: #ff0000;
+    color: #04a777;
 }
 
 footer a {
     text-decoration: none;
-    color: #ff0000;
+    color: #04a777;
 }
 
 /** Media query for smaller devices*/
@@ -361,6 +361,10 @@ footer a {
 
 @media screen and (min-width: 1000px) {
 
+    body {
+        min-height: 110vh;
+    }
+
     #question-tracker {
         font-size: 20px;
     }
@@ -372,6 +376,7 @@ footer a {
 
 /* Media query for smaller desktop devices */
 @media screen and (min-width: 1200px) {
+
 
     /* Heading styling */
     h1 {
