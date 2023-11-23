@@ -20,7 +20,7 @@ h1,
 h2 {
     font-family: "teko", "san-serif";
     letter-spacing: 2px;
-    color: #04a777;
+    color: #ff0000;;
 }
 
 main {
@@ -262,12 +262,12 @@ footer {
     text-align: center;
     position: relative;
     bottom: 0;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 footer a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 /** Media query for smaller devices*/
