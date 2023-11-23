@@ -209,6 +209,43 @@ function showResults() {
     }
 }
 
+function validateFirstName() {
+    if (/[A-z][^0-9]/.test(raffle.fname.value)) {
+        return true;
+    } else {
+        alert('Please fill in your first name with the correct format');
+        return false;
+    }
+
+}
+
+function validateLastName() {
+    if (/[A-z][^0-9]/.test(raffle.surname.value)) {
+        return true;
+    } else {
+        alert('Please fill in your surname with the correct format');
+    }
+}
+
+function validateContact() {
+    if (/[0-9][^A-z]/.test(raffle.contact.value)) {
+        return true;
+    } else {
+        alert('Incorrect contact number please fill in your contact number with the correct format');
+        return false;
+    }
+}
+
+function validateTeam() {
+    let i = document.forms["raffle-form"].team.value;
+
+    if (i == "") {
+        alert("Please pick your favourite team from the drop down box");
+        return false;
+    }
+
+}
+
 /**
  * targets the form and the inputs value which is achieved by the
  * name of the input
@@ -218,24 +255,11 @@ function showResults() {
  */
 
 function handleForm(event) {
-    let x = document.forms["raffle-form"].fname.value;
-    let j = document.forms["raffle-form"].surnamevalue;
-    let y = document.forms["raffle-form"].contact.value;
-    let i = document.forms["raffle-form"].team.value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    } else if (j == "") {
-        alert("Surname must be filled out");
-        return false;
-    } else if (y == "") {
-        alert("Please fill in your phone number");
-        return false;
-    } else if (i == "") {
-        alert("Please pick your favourite team from the drop down box");
-        return false;
+
+    if (!validateFirstName() || !validateLastName() || !validateContact() || validateTeam()) {
+        alert('All form elements must be filled in correctly');
     } else {
-        submitButton.addEventListener("click", raffleEnd);
+        submitButton.addEventListener('click', raffleEnd);
     }
     event.preventDefault();
 }
@@ -283,6 +307,8 @@ function raffleEnd(event) {
     thankYouText.classList.remove("hide");
     backButton.classList.add("back-btn");
     backButton.addEventListener("click", runGame);
+    submitButton.removeEventListener('click', raffleEnd);
+    submitButton.addEventListener('click', handleForm);
 
 
 

@@ -74,6 +74,9 @@
 - Fixed play again bug, after submitting the form if the user played the quiz again and pressed play again, the raffle would be shown rather than the questions, which was not the expected outcome, to fix this I removed the join raffle event listener in the raffle end function which fixed this issue.
 - Fixed a bug where when replaying the quiz, the form would remain filled in rather than empty which is how the form was orginally designed, to fix this I created a function called reset form and got the forms id, I then used the .reset method, then placed this function in the startQuiz function to ensure the user was still able to submit the form.
 - Fixed html input error by removing the min and max values on the type tel which fixed this issue.
+- Form could be submitted without the correct accuracy in order to fix this I created a pattern for the first,surname and contact number which improved the accuracy of the form.
+- Fixed form issues by creating validation functions checking if the pattern included in the html is matched by the user input, if it isnt there will be an alert sent to the user informing them of this. The handle form function then is checking if all the inputs are filled out correctly, if they are not there will be an alert sent to the user informing them of this, otherwise the submit event listener will be created allowing the user to submit the form. 
+- Fixed form submission bug when the user clicked submit form when retrying the quiz the form would instantly submit in order to fix this I removed the event listener raffle end and added the function handle form which fixed this issue.
 
 
 ### Known Bugs
