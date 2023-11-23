@@ -67,7 +67,7 @@ main {
 
 #game-area {
     background-color: #ffdead;
-    height: 420px;
+    height: 450px;
     position: relative;
     bottom: 40px;
 }
@@ -270,14 +270,11 @@ footer a {
     color: #ffffff;
 }
 
-
-
 /** Media query for smaller devices*/
 @media screen and (min-width: 390px) {
     #game-area {
         margin-left: 10px;
     }
-
 }
 
 /* Media query for tablet devices*/
@@ -422,7 +419,7 @@ footer a {
         color: #04a777;
     }
 
-    #results-button:hover {
+    #results-button button:hover {
         color: #04a777;
     }
 
