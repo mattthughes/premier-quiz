@@ -236,16 +236,6 @@ function validateContact() {
     }
 }
 
-function validateTeam() {
-    let i = document.forms["raffle-form"].team.value;
-
-    if (i == "") {
-        alert("Please pick your favourite team from the drop down box");
-        return false;
-    }
-
-}
-
 /**
  * targets the form and the inputs value which is achieved by the
  * name of the input
@@ -255,9 +245,12 @@ function validateTeam() {
  */
 
 function handleForm(event) {
-
-    if (!validateFirstName() || !validateLastName() || !validateContact() || validateTeam()) {
+    let i = document.forms["raffle-form"].team.value;
+    if (!validateFirstName() || !validateLastName() || !validateContact()) {
         alert('All form elements must be filled in correctly');
+    } else if (i == "") {
+        alert("Please pick your favourite team from the drop down box");
+        return false;
     } else {
         submitButton.addEventListener('click', raffleEnd);
     }

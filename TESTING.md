@@ -77,6 +77,8 @@
 - Form could be submitted without the correct accuracy in order to fix this I created a pattern for the first,surname and contact number which improved the accuracy of the form.
 - Fixed form issues by creating validation functions checking if the pattern included in the html is matched by the user input, if it isnt there will be an alert sent to the user informing them of this. The handle form function then is checking if all the inputs are filled out correctly, if they are not there will be an alert sent to the user informing them of this, otherwise the submit event listener will be created allowing the user to submit the form. 
 - Fixed form submission bug when the user clicked submit form when retrying the quiz the form would instantly submit in order to fix this I removed the event listener raffle end and added the function handle form which fixed this issue.
+- Fixed form issue by removing validate team function as the form could be submitted without selecting a team, added to handle form function and added extra if statement to fix this issue.
+- While checking the javascript in the validator there were some warnings regarding the variable raffle not being defined in order to fix this added document.forms to the logic in all validator if statements.
 
 
 ### Known Bugs
