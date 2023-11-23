@@ -210,7 +210,7 @@ function showResults() {
 }
 
 function validateFirstName() {
-    if (/[A-z][^0-9]/.test(raffle.fname.value)) {
+    if (/[A-z][^0-9]/.test(document.forms.raffle.fname.value)) {
         return true;
     } else {
         alert('Please fill in your first name with the correct format');
@@ -220,7 +220,7 @@ function validateFirstName() {
 }
 
 function validateLastName() {
-    if (/[A-z][^0-9]/.test(raffle.surname.value)) {
+    if (/[A-z][^0-9]/.test(document.forms.raffle.surname.value)) {
         return true;
     } else {
         alert('Please fill in your surname with the correct format');
@@ -228,7 +228,7 @@ function validateLastName() {
 }
 
 function validateContact() {
-    if (/[0-9][^A-z]/.test(raffle.contact.value)) {
+    if (/[0-9][^A-z]/.test(document.forms.raffle.contact.value)) {
         return true;
     } else {
         alert('Incorrect contact number please fill in your contact number with the correct format');
