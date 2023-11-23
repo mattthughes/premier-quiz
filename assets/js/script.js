@@ -95,8 +95,6 @@ function startQuiz() {
     showQuestions();
     resetForm();
 }
-
-console.log(questions);
 /** Get current question which is questions array and the current question index
  * Set question number to the question index and add one
  * set the question element text to the number of the question and the current question
@@ -125,12 +123,14 @@ function showQuestions() {
         button.addEventListener("click", selectAnswer);
     });
 }
-
+/** Shuffle questions array with the parameter array
+ * using the sort method on array and then using arrow function
+ * syntax, math.floor and then randomise the number with the questions
+ * array being 50% positive and 50% negative randomly shuffling array.
+ */
 function shuffleQuestions(array) {
     array.sort(() => Math.floor(Math.random() - 0.5));
-    console.log(array);
 }
-
 /**First creates a variable select button then
  * another variable checking if the select button is in use.
  * then add one score by 1 if correct and changing button green
@@ -179,7 +179,6 @@ function showNextQuestion() {
         showResults();
     }
 }
-
 /** This function is first using the reset state and then checking what the score is
  * then i am changing the question element space by using the inner html property to change the
  * html and doing the same for the next button and setting this to a block level element. with the last option allowing the user to go to
@@ -194,7 +193,6 @@ function showResults() {
     resultsText.classList.remove("hide");
     resultsBtn.classList.remove("hide");
     resultsBtn.addEventListener("click", runGame);
-
     if (score <= 3) {
         resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
         resultsBtn.innerHTML = "Play Again";
@@ -202,13 +200,13 @@ function showResults() {
         resultsText.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
         resultsBtn.innerHTML = "Play Again";
     } else if (score > 9) {
-        resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got every question correct press the next button to enter the raffle!`;
-
+        resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got 
+        every question correct press the 
+        next button to enter the raffle!`;
         resultsBtn.innerHTML = "Next";
         resultsBtn.addEventListener("click", joinRaffle);
     }
 }
-
 function validateFirstName() {
     if (/[A-z][^0-9]/.test(document.forms.raffle.fname.value)) {
         return true;
@@ -216,9 +214,7 @@ function validateFirstName() {
         alert('Please fill in your first name with the correct format');
         return false;
     }
-
 }
-
 function validateLastName() {
     if (/[A-z][^0-9]/.test(document.forms.raffle.surname.value)) {
         return true;
@@ -226,7 +222,6 @@ function validateLastName() {
         alert('Please fill in your surname with the correct format');
     }
 }
-
 function validateContact() {
     if (/[0-9][^A-z]/.test(document.forms.raffle.contact.value)) {
         return true;
@@ -235,15 +230,12 @@ function validateContact() {
         return false;
     }
 }
-
 /**
  * targets the form and the inputs value which is achieved by the
  * name of the input
  * checking if each input is an empty string to send an alert to the user
  * otherwise access the raffle end function
- *
  */
-
 function handleForm(event) {
     let i = document.forms["raffle-form"].team.value;
     if (!validateFirstName() || !validateLastName() || !validateContact()) {
@@ -256,7 +248,6 @@ function handleForm(event) {
     }
     event.preventDefault();
 }
-
 //** This function is first removing the hide class and adding the show class to make this html visible which was previously hidden
 // After this the function is hidding the question and answer elements to showcase the correct elements this will only be shown if a user gets ever answer correct **/
 function joinRaffle() {
@@ -268,30 +259,30 @@ function joinRaffle() {
     quizHeading.classList.add("hide");
     submitButton.addEventListener("click", handleForm);
     resultsBtn.removeEventListener('click', joinRaffle);
-
     /**
-     * Selecting all inputs by type number
+     * Selecting all inputs by type tel
      * using a for each loop checking if input value
      * is greater than input.max length to then use the slice method
      * Code credited to https://www.youtube.com/watch?v=DDUdZNCuwtU
      */
-    document.querySelectorAll('input[type="number"]').forEach((input) => {
+    document.querySelectorAll('input[type="tel"]').forEach((input) => {
         input.oninput = () => {
             if (input.value > input.maxLength)
                 input.value = input.value.slice(0, input.maxLength);
         };
     });
 }
-
+/**
+ * Getting the raffle and using the reset method to clear the form
+ * Will be used in the start quiz function
+ */
 function resetForm() {
     document.getElementById('raffle').reset();
 }
-
 /**
  * Raffle end function hides contact form and shows the thank you screen
  * the function checks if the user selects none to then showcase the thank you text without the favourite team
  * otherwise showcase the favourite team alongside the first, second name and phone number provided.
- *
  */
 function raffleEnd(event) {
     contactForm.classList.add("hide");
@@ -302,9 +293,6 @@ function raffleEnd(event) {
     backButton.addEventListener("click", runGame);
     submitButton.removeEventListener('click', raffleEnd);
     submitButton.addEventListener('click', handleForm);
-
-
-
     if (favouriteTeam.value === "None") {
         thankYou.classList.add("thank-you-none");
         thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , 
@@ -319,12 +307,10 @@ function raffleEnd(event) {
     backButton.classList.add("show");
     event.preventDefault();
 }
-
 /** Setting the next button to none and using a while loop to state while the answer buttons.first child is true to then
  * remove the child which is the first child.
  *  Quiz basics and customised to projects needs from  https://www.youtube.com/watch?v=PBcqGxrr9g8
  */
-
 function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
