@@ -150,6 +150,14 @@ Thank you section|Pass|N/A
 
 `Quiz intro`
 
+**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Site title|Link directly back to home page|Clicked Home title|Home page loaded|Pass
+Instructions button|When button click display instructions hiding quiz intro|Clicked button|Instructions appeared quiz intro hidden|Pass
+Instructions start button|When start button clicked show questions and answers hide instructions|Clicked button|Questions,answers appeared instructions hidden|Pass
+Start button|When start button clicked show questions and answers quiz intro|Clicked button|Questions,answers appeared quiz intro hidden|Pass
+Footer|When name clicked direct user to github page opening new tab|Clicked footer name|New tab opened github page loaded|Pass
+
 `Game Area`
 
 `Results`
