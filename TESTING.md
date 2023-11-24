@@ -162,8 +162,60 @@ Start button|When start button clicked show questions and answers quiz intro|Cli
 Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
 Footer|When name clicked direct user to github page opening new tab|Clicked footer name|New tab opened github page loaded|Pass| 
  | | | | | 
+Instructions Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
+Start butto
 
-`Game Area`
+**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Questions|When start button pressed question to be shown randomly|Clicked start and started quiz|Random question shown not repeating same question when refreshed|Pass
+Answer Buttons (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
+Answer Buttons|Allow user to select button of choice disabling all buttons after input showing the next button after|Clicked answer button|disabled all buttons next button appeared|Pass
+Answer Buttons(Correct answer)|Answer button to change colour to green, all buttons to be disabled,next button to appear|Clicked  answer button|Colour changed to green all buttons disabled, next button appeared|Pass
+Answer Buttons(Wrong answer)|Answer button to change colour to red, all buttons to be disabled,next button to appear|Clicked answer button|Colour changed to red, all buttons disabled,next button appeared|Pass
+Next Button|Show random question and answers, hide next button, restart button should appear|Clicked next button|Showed random questions and answers,next button hidden restart button appeared|Pass
+Next Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
+Restart Button|Restart button to reset the quiz score and question number, show random question,next, restart button hidden|clicked reset button|Question number,score reset shown random question with restart button, next button hidden|Pass
+Restart Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
+Question Number|Question number to increase by 1 when next button pressed|Clicked next button|Question number increased by 1|Pass
+Questions limit|10 questions to be shown in a random order not repeating once all 10 have been shown results screen to load|Answered all 10 questions|Questions shown in random order and results screen shown|Passn|When start button clicked show questions and answers quiz intro|Clicked button|Questions,answers appeared quiz intro hidden|Pass| 
+Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
+Footer|Wh
+
+**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Score = 1|Good effort you 1 out of 10 press play to play again|Scored 1|Good effort you scored 1 out of 10 appeared with play button|Pass
+Play again button|Button to restart the quiz without refreshing page|Clicked button|Quiz restarted without refreshing page|Pass
+Play again button (Hover effect)|Colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
+Score = 2|Good effort you 2 out of 10 press play to play again|Scored 2|Good effort you scored 2 out of 10 appeared with play button|Pass
+Score = 3|Good effort you 3 out of 10 press play to play again|Scored 3|Good effort you scored 3 out of 10 appeared with play button|Pass
+Score = 4|You know alot about the Premier League you scored 4 out of 10 press play again to try again|Scored 4|You know alot about the Premier League you scored 4 out of 10 appeared with play button|Pass
+Score = 5|You know alot about the Premier League you scored 5 out of 10 press play again to try again|Scored 5|You know alot about the Premier League you scored 5 out of 10 appeared with play button|Pass
+Score = 6|You know alot about the Premier League you scored 6 out of 10 press play again to try again|Scored 6|You know alot about the Premier League you scored 6 out of 10 appeared with play button|Pass
+Score = 7|You know alot about the Premier League you scored 7 out of 10 press play again to try again|Scored 7|You know alot about the Premier League you scored 7 out of 10 appeared with play button|Pass
+Score = 8|You know alot about the Premier League you scored 8 out of 10 press play again to try again|Scored 8|You know alot about the Premier League you scored 8 out of 10 appeared with play button|Pass
+Score = 9|You know alot about the Premier League you scored 9 out of 10 press play again to try again|Scored 9|You know alot about the Premier League you scored 9 out of 10 appeared with play button|Pass
+Score = 10|You scored 10 out of 10 congragulations you got every question correct press the next button to enter the raffle|Scored 10|You scored 10 out of 10 congragulations you got every question correct appeared with next button|Pass
+Next button|Next button to show the raffle and hide results text|Click Button|Raffle appeared and results hidden|Pass
+Next button (Hover effect)|Colour to change to green when hovered over|Hovered over button|Colour changed to green|Passen name clicked direct user to github page opening new tab|Clicked footer name|New tab opened github page loaded|Pass| 
+ | | | | | 
+
+
+
+**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Name Input (empty|send alert fill in your name with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
+Name Input(numbers)|alert sent to fill in your name with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in name with correct format|Pass
+Name Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there surname correctly passing validation check for first name|Pass
+Surname Input (empty|send alert fill in your surname with the correct format|pressed submit leaving surname empty|alert sent telling user to fill in surname with correct format|Pass
+Surname Input(numbers)|alert sent to fill in your surname with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in surname with correct format|Pass
+Surname Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there contact number correctly passing validation check for surname|Pass
+Phone Input (empty)|send alert fill in your contact number with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
+Name Input(letters)|alert sent to fill in your contact number with the correct format|Entered letters pressed submit|alert sent telling user to fill in name with correct format|Pass
+Name Input(numbers)|No alert sent to user and to move onto next validation check|Enter Numbers pressed submit|Alert sent to user telling them to pick there favourite team correctly passing validation check for phone number |Pass
+Favourite Team input(Empty)|Send alert to pick your favourite team|Clicked submit with no input|Alert sent to user telling them to pick there favourite team|Pass
+Favourite Team input any team |Form to be submitted taking user to thank you screen|Clicked submit with any team|Thank you screen appeared along with play again button|Pass
+Submit button (incorrect or empty input fields)|Send alert stating all form elements must be filled in correctly|Clicked submit with empty or wrong format|Alert sent telling user the form must be filled out correctly and which ones were not|Pass
+Submit button (Hover effect)|Colour changed to green when hovered over|Hovered over button|Button colour changed to green |Pass`Game Area`
 
 **Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
 :-----:|:-----:|:-----:|:-----:|:-----:
