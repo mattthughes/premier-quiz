@@ -20,7 +20,7 @@ h1,
 h2 {
     font-family: "teko", "san-serif";
     letter-spacing: 2px;
-    color: #04a777;
+    color: #af0404;
 }
 
 main {
@@ -139,7 +139,7 @@ main {
 
 /** for the correct and incorrect answers **/
 .incorrect {
-    background-color: #ff0000;
+    background-color: #af0404;
 }
 
 .correct {
@@ -258,16 +258,16 @@ main {
 
 footer {
     margin-top: auto;
-    width: 90%;
+    width: 100%;
     text-align: center;
     position: relative;
     bottom: 0;
-    color: #04a777;
+    color: #af0404;
 }
 
 footer a {
     text-decoration: none;
-    color: #04a777;
+    color: #af0404;
 }
 
 /** Media query for smaller devices*/
