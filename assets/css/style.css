@@ -391,8 +391,9 @@ footer a {
 
     .error-404 {
         position: relative;
-        left: 110px;
+        left: 70px;
         top: 100px;
+        width: 80vw;
     }
 
     .error-btn {
@@ -421,7 +422,11 @@ footer a {
 
     /* Heading styling */
     h1 {
-        font-size: 30px;
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 
     /* Quiz styling */
@@ -528,7 +533,8 @@ footer a {
 
     .thank-you-none {
         position: relative;
-        left: 20%;
+        width: 60vw;
+        left: 200px;
     }
 
     .error-404 {
