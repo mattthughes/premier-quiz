@@ -80,8 +80,6 @@ Premier League greatest facts is a quiz designed around the best league in the w
     - [Acknowledgements](#acknowledgements)
 
 
-
-
 [Live Project](https://mattthughes.github.io/premier-quiz/)
 
 ## Project Goals
@@ -97,9 +95,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 * Test knowledge to prove how much they know.
 * Learn information and facts they didnt quite know.
 * Be able to view instructions which explains how the quiz works
-* Be able to skip certain questions and go back if they would like to attempt certain questions again.
   
-
 ### Frequent user goals 
 
 * Attempt Quiz again to beat high score 
@@ -112,15 +108,21 @@ Premier League greatest facts is a quiz designed around the best league in the w
 * Aim to add questions which only include images instead of text.
 * Keep track of highest scores and usernames.
   
-
-
 ## Design
 
 ## Typography
 
 ### Headings 
 
+I decided to go with the following font style for the headings, this felt like a proffessional style and didnt take much away from the overall site as it didnt look out of place.
+
+![Headings font style](docs/wireframes/heading-font-quiz.png)
+
 ### Body
+
+I decided to go for the following font style for the headings as like the headings font I felt the style did not take away from the rest of the content on the site.
+
+![Body font style](docs/wireframes/font-body-quiz.png)
 
 ### Wireframes 
 
@@ -320,6 +322,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 - [Am I responsive](https://ui.dev/amiresponsive)
 - [Convertio](https://convertio.co/)
 - [FLighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+- [Regex](https://regexr.com/)
 
 ## Deployment 
 
@@ -354,7 +357,7 @@ To deploy the site using GitHub Pages follow the following steps:
 
 ## Testing
 
-I tested this project extensively testing all elements making sure they had the correct outcome while also documenting all solved bugs and how they were fixed, all testing content can be viewed in [TestingMd] (https://github.com/mattthughes/premier-quiz/blob/main/TESTING.md)
+I tested this project extensively testing all elements making sure they had the correct outcome while also documenting all solved bugs and how they were fixed, all testing content can be viewed in [TestingMd](https://github.com/mattthughes/premier-quiz/blob/main/TESTING.md)
 
 ## Credits 
 

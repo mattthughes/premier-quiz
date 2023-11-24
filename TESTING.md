@@ -1,5 +1,7 @@
 # Premier League Greatest Facts Testing
 
+![Responsivness logo](docs/wireframes/responsive-premier-quiz.png)
+
 ## CONTENTS
 
 - [Premier League Greatest Facts Testing](#premier-league-greatest-facts-testing)
@@ -99,6 +101,8 @@
 ### Wave Report 
 
 #### Index page Wave Report
+
+![Index page wave testing](docs/wireframes/wave-report-quiz.png)
 
 #### Error 404 page Wave Report
 
