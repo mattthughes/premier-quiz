@@ -114,9 +114,37 @@
 
 #### Aims
 
+* The aim is to make sure this quiz is responsive for all screen sizes without unneccesary making the user rotate their screen or scroll.
+* This will be done by making sure all elements are consistent and not overlapping.
+* All buttons work and questions randomise and dont repeat as intended.
+* Make sure error page is deployed by github rather than githubs own error page.
+* When submitting the form the form validates and stops the user, which would happen if the form submission isnt filled in or if the user is using the wrong format, once all inputs are filled in correctly, the submit button will become clickable which will send the user to a thank you page which is all on the main page index.html.
+
 #### Testing steps
 
+* I will test the responsiveness for all screen sizes by firstly clicking on the application and using the inspect tool to open the google chrome developer tools.
+* After this I will click on the laptop display and change the aspect ration to 280px which is the lowest screen size, after this I will begin adjusting the screen sizes to make sure all elements are displaying correctly on all screen sizes.
+* I will make sure all answer buttons can be clicked on only once, when the user has selected an answer I will make sure the buttons disable with the next button appearing
+* I will make sure all questions are only repeated once and randomise when clicking the start, reset, or play again buttons.
+* I will make sure all links open in seperate tabs not taking the user from the main page.
+* I will make sure github will be finding the error page, I created rather than github displaying its own page.
+* All testing will be completed using Google Chrome Internet Explorer and FireFox.
+
 ### Testing Results
+
+**Responsiveness**|**Index**|**Error 404**
+:-----:|:-----:|:-----:
+Page Title|Pass|Pass
+Background Image|Pass|N/a
+Instructions|Pass|N/a
+Instructions text|Pass|N/A
+Questions|Pass|N/A
+Answers|Pass|N/A
+Next Button|Pass|N/A
+Restart Button|Pass|N/A
+Results|Pass|N/A
+Raffle|Pass|N/A
+Thank you section|Pass|N/A
 
 ### Elements Testing 
 

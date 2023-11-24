@@ -414,6 +414,12 @@ footer a {
     #results {
         width: 1000px;
     }
+
+    .thank-you-none {
+        position: relative;
+        width: 60vw;
+        left: 200px;
+    }
 }
 
 /* Media query for smaller desktop devices */
@@ -531,11 +537,6 @@ footer a {
         position: relative;
     }
 
-    .thank-you-none {
-        position: relative;
-        width: 60vw;
-        left: 200px;
-    }
 
     .error-404 {
         position: relative;
