@@ -254,6 +254,31 @@ main {
     border-radius: 10px;
 }
 
+.error-404 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdead;
+}
+
+.error-404 hr {
+    display: none;
+}
+
+.error-404 h2 {
+    align-self: center;
+}
+
+.error-btn {
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    align-self: center;
+}
+
 /* Footer styles */
 
 footer {
