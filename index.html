@@ -1,226 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Meta search tags-->
-    <meta
-      name="description"
-      content="Premier league greatest  is a quiz based on the history of the best league in the world"
-    />
+    <meta name="description"
+        content="Premier league greatest  is a quiz based on the history of the best league in the world" />
     <!--Meta search tags-->
-    <meta
-      name="keyword"
-      content="Premier League, English football, football, quiz, best league in the world, sport quizzes, best league in the world"
-    />
+    <meta name="keyword"
+        content="Premier League, English football, football, quiz, best league in the world, sport quizzes, best league in the world" />
     <!--Application title-->
     <title>Premier League Greatest Facts</title>
     <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <!--Style sheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!--Heading Element -->
     <header>
-      <section class="heading">
-        <a href="index.html">
-          <h1 class="logo">Premier League Greatest Facts</h1>
-        </a>
-      </section>
+        <section class="heading">
+            <a href="index.html">
+                <h1 class="logo">Premier League Greatest Facts</h1>
+            </a>
+        </section>
     </header>
 
     <main>
-      <!--Quiz intro first page-->
-      <div class="quiz" id="quiz">
-        <div id="quiz-intro">
-          <p>
-            The Premier League has become the best league in the world where
-            countless stories have been told from relegations to last minute
-            winners on the final day, even to the 2013/2014 season where
-            Leicester city did the impossible but how well do you really know
-            the <strong>Premier League</strong>, challenge yourself in this quiz
-            with 10 questions, if you are able to get all 10 correct, you have a
-            chance to enter a raffle to visit a live Premier League game of your
-            choosing sounds easy right. Good luck!
-          </p>
-          <div id="intro-buttons">
-            <button id="instructions-btn">Instructions</button>
-            <button id="quiz-start-btn">Start Quiz</button>
-          </div>
+        <!--Quiz intro first page-->
+        <div class="quiz" id="quiz">
+            <div id="quiz-intro">
+                <p>
+                    The Premier League has become the best league in the world where
+                    countless stories have been told from relegations to last minute
+                    winners on the final day, even to the 2013/2014 season where
+                    Leicester city did the impossible but how well do you really know
+                    the <strong>Premier League</strong>, challenge yourself in this quiz
+                    with 10 questions, if you are able to get all 10 correct, you have a
+                    chance to enter a raffle to visit a live Premier League game of your
+                    choosing sounds easy right. Good luck!
+                </p>
+                <div id="intro-buttons">
+                    <button id="instructions-btn">Instructions</button>
+                    <button id="quiz-start-btn">Start Quiz</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <!--Game Area-->
-      <section id="game-area">
-        <div id="game-heading">
-          <h2>Quiz</h2>
-        </div>
-        <div id="question-tracker"></div>
-        <div id="questions">Question goes here</div>
-        <div id="answer-buttons">
-          <button class="answer-btn">Answer 1</button>
-          <button class="answer-btn">Answer 2</button>
-          <button class="answer-btn">Answer 3</button>
-          <button class="answer-btn">Answer 4</button>
+        <!--Game Area-->
+        <section id="game-area">
+            <div id="game-heading">
+                <h2>Quiz</h2>
+            </div>
+            <div id="question-tracker"></div>
+            <div id="questions">Question goes here</div>
+            <div id="answer-buttons">
+                <button class="answer-btn">Answer 1</button>
+                <button class="answer-btn">Answer 2</button>
+                <button class="answer-btn">Answer 3</button>
+                <button class="answer-btn">Answer 4</button>
+            </div>
+
+            <div id="quiz-buttons">
+                <button id="next-button">Next</button>
+                <button id="restart-button">Restart</button>
+            </div>
+        </section>
+        <!--Instructions-->
+        <section class="instructions">
+            <div class="instructions-text" id="instructions-text">
+                <h2>Premier League Greatest Facts Instructions</h2>
+                <p>
+                    Welcome to the Premier League Greatest Facts quiz, if you are new to
+                    sports quizzes or a quiz veteran we are happy to have you, for all
+                    our new players out there this quiz is very simple, just follow
+                    these easy steps.
+                </p>
+
+                <p>Step 1: Click the start quiz button below.</p>
+
+                <p>Step 2: Read the question and select one of the four answers,if you get the answer
+                    correct, your answer will highlight in green, otherwise your answer will highliight in red.
+                </p>
+
+                <p>
+                    Step 3: Press the next button and answer all 10 questions to find
+                    out your results.
+                </p>
+
+                <p>
+                    We hope you now feel ready to take part in this fun quiz, How well
+                    do you really know the Premier League?
+                </p>
+                <button id="instructions-start-btn">Start Quiz</button>
+            </div>
+        </section>
+        <!--Results screen-->
+        <div id="results">
+            <div id="results-text"></div>
+            <div id="results-button">
+                <button id="results-btn" value="results">Results</button>
+            </div>
         </div>
 
-        <div id="quiz-buttons">
-          <button id="next-button">Next</button>
-          <button id="restart-button">Restart</button>
+        <!--Contact Form-->
+        <section id="contact-form">
+            <form id="raffle" method="GET" action="index.html" name="raffle-form">
+                <div class="raffle-heading">
+                    <h2>Premier League Greatest Facts Raffle</h2>
+                    <p>
+                        Congratulations on getting every question correct on the Premier
+                        league greatest facts quiz, you truly have excellent knowledge
+                        about the Premier League, just complete this simple form to enter
+                        a raffle for the chance of watching a live premier league game of
+                        your choosing.
+                    </p>
+                </div>
+
+                <div class="raffle-inputs">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="fname" id="first-name" class="text-input" placeholder="First Name"
+                        pattern="[A-z][^0 - 9]" required />
+                    <br />
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" class="text-input" placeholder="Surname"
+                        pattern="[A-z][^0 - 9]" required />
+                    <br />
+                    <label for="contact-number">Phone Number</label>
+                    <input type="tel" name="contact" id="contact-number" class="phone-number" placeholder="00000000000"
+                        maxlength="11" pattern="[0-9][^A-z]" required />
+                    <br />
+                    <label for="favourite-team">Pick your favourite team</label>
+                    <select name="team" id="favourite-team" required>
+                        <option label=" "></option>
+                        <option value="Arsenal">Arsenal</option>
+                        <option value="Afc-Bournemouth">Afc Bournemouth</option>
+                        <option value="Aston-Villa">Aston Villa</option>
+                        <option value="Brentford">Brentford</option>
+                        <option value="Brighton">Brighton & Hove Albion</option>
+                        <option value="Burnley">Burnley</option>
+                        <option value="Chelsea">Chelsea</option>
+                        <option value="Crystal-Palace">Crystal Palace</option>
+                        <option value="Everton">Everton</option>
+                        <option value="Fulham">Fulham</option>
+                        <option value="Liverpool">Liverpool</option>
+                        <option value="Luton-Town">Luton Town</option>
+                        <option value="Manchester-City">Manchester City</option>
+                        <option value="Manchester-United">Manchester United</option>
+                        <option value="Newcastle-United">Newcastle United</option>
+                        <option value="Nottingham-Forest">Nottingham Forest</option>
+                        <option value="Sheffield-United">Sheffield United</option>
+                        <option value="Tottenham-Hotspur">Tottenham Hotspur</option>
+                        <option value="West-Ham">West Ham United</option>
+                        <option value="Wolves">Wolverhampton Wanderers</option>
+                        <option value="None">None</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-btn" class="raffle-button">
+                    Submit
+                </button>
+            </form>
+        </section>
+        <!--Thank you section-->
+        <div id="thank-you">
+            <div id="thank-you-text"></div>
+            <div id="thank-you-button">
+                <button id="back-btn">Go Back</button>
+            </div>
         </div>
-      </section>
-      <!--Instructions-->
-      <section class="instructions">
-        <div class="instructions-text" id="instructions-text">
-          <h2>Premier League Greatest Facts Instructions</h2>
-          <p>
-            Welcome to the Premier League Greatest Facts quiz, if you are new to
-            sports quizzes or a quiz veteran we are happy to have you, for all
-            our new players out there this quiz is very simple, just follow
-            these easy steps.
-          </p>
-
-          <p>Step 1: Click the start quiz button below.</p>
-
-          <p>Step 2: Read the question and select one of the four answers,if you get the answer 
-            correct, your answer will highlight in green, otherwise your answer will highliight in red. 
-          </p>
-
-          <p>
-            Step 3: Press the next button and answer all 10 questions to find
-            out your results.
-          </p>
-
-          <p>
-            We hope you now feel ready to take part in this fun quiz, How well
-            do you really know the Premier League?
-          </p>
-          <button id="instructions-start-btn">Start Quiz</button>
-        </div>
-      </section>
-      <!--Results screen-->
-      <div id="results">
-        <div id="results-text"></div>
-        <div id="results-button">
-          <button id="results-btn" value="results">Results</button>
-        </div>
-      </div>
-
-      <!--Contact Form-->
-      <section id="contact-form">
-        <form id="raffle" method="GET" action="index.html" name="raffle-form">
-          <div class="raffle-heading">
-            <h2>Premier League Greatest Facts Raffle</h2>
-            <p>
-              Congratulations on getting every question correct on the Premier
-              league greatest facts quiz, you truly have excellent knowledge
-              about the Premier League, just complete this simple form to enter
-              a raffle for the chance of watching a live premier league game of
-              your choosing.
-            </p>
-          </div>
-
-          <div class="raffle-inputs">
-            <label for="first-name">First Name</label>
-            <input
-              type="text"
-              name="fname"
-              id="first-name"
-              class="text-input"
-              placeholder="First Name"
-              pattern="[A-z][^0 - 9]"
-              required
-            />
-            <br />
-            <label for="surname">Surname</label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              class="text-input"
-              placeholder="Surname"
-              pattern="[A-z][^0 - 9]"
-              required
-            />
-            <br />
-            <label for="contact-number">Phone Number</label>
-            <input
-              type="tel"
-              name="contact"
-              id="contact-number"
-              class="phone-number"
-              placeholder="00000000000"
-              maxlength="11"
-              pattern="[0-9][^A-z]"
-              required
-            />
-            <br />
-            <label for="favourite-team">Pick your favourite team</label>
-            <select name="team" id="favourite-team" required>
-              <option label=" "></option>
-              <option value="Arsenal">Arsenal</option>
-              <option value="Afc-Bournemouth">Afc Bournemouth</option>
-              <option value="Aston-Villa">Aston Villa</option>
-              <option value="Brentford">Brentford</option>
-              <option value="Brighton">Brighton & Hove Albion</option>
-              <option value="Burnley">Burnley</option>
-              <option value="Chelsea">Chelsea</option>
-              <option value="Crystal-Palace">Crystal Palace</option>
-              <option value="Everton">Everton</option>
-              <option value="Fulham">Fulham</option>
-              <option value="Liverpool">Liverpool</option>
-              <option value="Luton-Town">Luton Town</option>
-              <option value="Manchester-City">Manchester City</option>
-              <option value="Manchester-United">Manchester United</option>
-              <option value="Newcastle-United">Newcastle United</option>
-              <option value="Nottingham-Forest">Nottingham Forest</option>
-              <option value="Sheffield-United">Sheffield United</option>
-              <option value="Tottenham-Hotspur">Tottenham Hotspur</option>
-              <option value="West-Ham">West Ham United</option>
-              <option value="Wolves">Wolverhampton Wanderers</option>
-              <option value="None">None</option>
-            </select>
-          </div>
-          <button type="submit" id="submit-btn" class="raffle-button">
-            Submit
-          </button>
-        </form>
-      </section>
-      <!--Thank you section-->
-      <div id="thank-you">
-        <div id="thank-you-text"></div>
-        <div id="thank-you-button">
-          <button id="back-btn">Go Back</button>
-        </div>
-      </div>
     </main>
     <!--Footer Element-->
     <footer>
-      <p>
-        @ Premier League Greatest Facts 2023 Quiz created by<a
-          href="https://github.com/mattthughes/premier-quiz"
-        >
-          Matthew Hughes</a
-        >
-      </p>
+        <p>
+            @ Premier League Greatest Facts 2023 Quiz created by<a href="https://github.com/mattthughes/premier-quiz">
+                Matthew Hughes</a>
+        </p>
     </footer>
     <script src="assets/js/script.js" type="module"></script>
-  </body>
+</body>
+
 </html>
