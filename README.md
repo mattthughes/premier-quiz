@@ -1,5 +1,7 @@
 # Premier League Greatest Facts 
 
+![Responsivness logo](docs/wireframes/responsive-premier-quiz.png)
+
 Premier League greatest facts is a quiz designed around the best league in the world the Premier League this quiz will test the knowledge of the users with questions of increasing difficulty as the user progresses through.
 
 ## CONTENTS
@@ -80,7 +82,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 
 
 
-![Live Project](https://mattthughes.github.io/premier-quiz/)
+[Live Project](https://mattthughes.github.io/premier-quiz/)
 
 ## Project Goals
 
@@ -207,7 +209,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
 ![Correct answers mobile view](docs/wireframes/correct-answer-mobile.png)
 
 #### Wrong Answers 
-![Wrong answers mobile view](docs/wireframes/wrong-answer-mobile.png)
+![Wrong answers mobile view](docs/wireframes/wrong-answer-desktop.png)
 
 #### Desktop view correct and wrong answers 
 
@@ -365,7 +367,3 @@ I tested this project extensively testing all elements making sure they had the 
 #### Content
 
 ### Acknowledgements 
-
-
-
-
