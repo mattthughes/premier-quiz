@@ -36,13 +36,17 @@
 
 #### Index validation
 
+![Index Page validation](docs/wireframes/quiz-html-validation.png)
+
 #### Error 404 validation
 
 ### CSS Validation
 
+![CSS quiz validation](docs/wireframes/css-validator-quiz.png)
+
 ### JavaScript Validation
 
-
+![JavaScript quiz validation](docs/wireframes/javascript-validator.png)
 
 ### Solved Bugs
 
