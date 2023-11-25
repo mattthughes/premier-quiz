@@ -38,7 +38,7 @@ export const questions = [
 
         answers: [
             { text: "Wayne Rooney", correct: false },
-            { text: "Theirry Henry", correct: false },
+            { text: "Thierry Henry", correct: false },
             { text: "Alan Shearer", correct: true },
             { text: "Sergio Aguero", correct: false },
         ]
@@ -61,7 +61,7 @@ export const questions = [
 
         answers: [
             { text: "Paul Robinson", correct: false },
-            { text: "Alison", correct: false },
+            { text: "Alisson Becker", correct: false },
             { text: "Peter Schmeichel", correct: true },
             { text: "Asmir Begovic", correct: false },
         ]
@@ -101,7 +101,7 @@ export const questions = [
     },
 
     {
-        question: "Which team did not win an away game in a single Premier League season",
+        question: "Which team did not win a single away game in a single Premier League season",
 
         answers: [
             { text: "Stoke City", correct: false },

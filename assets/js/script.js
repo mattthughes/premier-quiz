@@ -207,6 +207,11 @@ function showResults() {
         resultsBtn.addEventListener("click", joinRaffle);
     }
 }
+/**
+ * These validation functions are finding a match with the string if its true and matches
+ * the string return true otherwise return false and send 
+ * alert to the user.
+ */
 function validateFirstName() {
     if (/[A-z][^0-9]/.test(document.forms.raffle.fname.value)) {
         return true;
