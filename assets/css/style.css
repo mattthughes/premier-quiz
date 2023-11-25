@@ -159,7 +159,6 @@ main {
 
 /** Results screen styles **/
 #results {
-    height: 20vh;
     background-color: #ffdead;
     padding: 20px;
     text-align: center;
@@ -419,7 +418,7 @@ footer a {
     .thank-you-none {
         position: relative;
         width: 60vw;
-        left: 200px;
+        left: 190px;
     }
 }
 
@@ -538,6 +537,9 @@ footer a {
         position: relative;
     }
 
+    .thank-you-none {
+        left: 250px;
+    }
 
     .error-404 {
         position: relative;
