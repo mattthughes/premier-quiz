@@ -293,11 +293,11 @@ I decided to go for the following font style for the headings as like the headin
 
 #### Mobile view error page view
 
-![Mobile view error page](docs/wireframes/mobile-error-quiz-lighthouse.png)
+![Mobile view error page](docs/wireframes/error-quiz-mobile.png)
 
 #### Desktop view error page view 
 
-![Desktop view error page](docs/wireframes/desktop-quiz-error-lighthouse.png)
+![Desktop view error page](docs/wireframes/error-desktop-quiz.png)
 
 ## Accessibilty 
 
@@ -370,7 +370,7 @@ To deploy the site using GitHub Pages follow the following steps:
 
 #### Imagery 
 
-* Background Image for all pages ![Background Image for quiz all pages](assets/images/background-prem.jpg)
+* Background Image for all pages [Background Image for quiz all pages](https://www.pinterest.com/pin/863072716078745996/)
 
 #### Code
 
