@@ -14,6 +14,7 @@ Premier League greatest facts is a quiz designed around the best league in the w
     - [Frequent user goals](#frequent-user-goals)
     - [Future Implementations](#future-implementations)
   - [Design](#design)
+  - [Colour Palette](#colour-palette)
   - [Typography](#typography)
     - [Headings](#headings)
     - [Body](#body)
@@ -22,8 +23,6 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [Desktop](#desktop)
   - [Key Features](#key-features)
     - [Favicon](#favicon)
-      - [Favicon Mobile](#favicon-mobile)
-      - [Favicon Desktop](#favicon-desktop)
     - [Questions](#questions)
       - [Questions Mobile view](#questions-mobile-view)
       - [Questions Desktop view](#questions-desktop-view)
@@ -110,6 +109,12 @@ Premier League greatest facts is a quiz designed around the best league in the w
   
 ## Design
 
+## Colour Palette 
+
+I decided to go for this colour palette for the project the green and red will be used when the user gets a question right or wrong. The light colours will be used for the background the look is very simplistic to not take away from the quiz itself, and the black colour will be the colour of the text.
+
+![Colour Palette](docs/wireframes/color-palette-quiz.png)
+
 ## Typography
 
 ### Headings 
@@ -142,11 +147,7 @@ I decided to go for the following font style for the headings as like the headin
 
 ### Favicon
 
-#### Favicon Mobile
-
-#### Favicon Desktop
-
-![Favicon Desktop view](docs/wireframes/favicon-quiz.png)
+![Favicon view](docs/wireframes/favicon-quiz.png)
 
 
 ### Questions 
@@ -292,7 +293,11 @@ I decided to go for the following font style for the headings as like the headin
 
 #### Mobile view error page view
 
+![Mobile view error page](docs/wireframes/mobile-error-quiz-lighthouse.png)
+
 #### Desktop view error page view 
+
+![Desktop view error page](docs/wireframes/desktop-quiz-error-lighthouse.png)
 
 ## Accessibilty 
 
@@ -357,7 +362,7 @@ To deploy the site using GitHub Pages follow the following steps:
 
 ## Testing
 
-I tested this project extensively testing all elements making sure they had the correct outcome while also documenting all solved bugs and how they were fixed, all testing content can be viewed in [TestingMd](https://github.com/mattthughes/premier-quiz/blob/main/TESTING.md)
+* I tested this project extensively testing all elements making sure they had the correct outcome while also documenting all solved bugs and how they were fixed, all testing content can be viewed in [TestingMd](https://github.com/mattthughes/premier-quiz/blob/main/TESTING.md)
 
 ## Credits 
 
@@ -365,8 +370,21 @@ I tested this project extensively testing all elements making sure they had the 
 
 #### Imagery 
 
+* Background Image for all pages ![Background Image for quiz all pages](assets/images/background-prem.jpg)
+
 #### Code
+
+* The show questions, select answers, reset state function were heavily inspired by quiz application tutorial and were customised to my projects needs. [Example used here](https://www.youtube.com/watch?app=desktop&v=riDzcEQbX6k)
+
+* Questions layout inspired by quiz application tutorial and were customised to my projects needs [Questions example here](https://www.youtube.com/watch?app=desktop&v=riDzcEQbX6k)
 
 #### Content
 
+* Premier League questions were partly taken from the following website [Premier league questions](https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-the-premier-league/)
+* The rest of the Premier League questions were taken from the following website [Premier league questions](https://historyofsoccer.info/history-and-interesting-facts-about-english-premier-league)
+
 ### Acknowledgements 
+
+* I would like to thank my mentor Graheme for his help during our sessions which helped me make changes where needed and constantly keep me on track during this project.
+* I would like to thank everyone in the code institute slack community that took there time to with giving out feedback.
+* I would like to thanks all my friends and family, who took there time to help test the project and provide me with any feedback to improve the project.

@@ -264,18 +264,6 @@ function joinRaffle() {
     quizHeading.classList.add("hide");
     submitButton.addEventListener("click", handleForm);
     resultsBtn.removeEventListener('click', joinRaffle);
-    /**
-     * Selecting all inputs by type tel
-     * using a for each loop checking if input value
-     * is greater than input.max length to then use the slice method
-     * Code credited to https://www.youtube.com/watch?v=DDUdZNCuwtU
-     */
-    document.querySelectorAll('input[type="tel"]').forEach((input) => {
-        input.oninput = () => {
-            if (input.value > input.maxLength)
-                input.value = input.value.slice(0, input.maxLength);
-        };
-    });
 }
 /**
  * Getting the raffle and using the reset method to clear the form
