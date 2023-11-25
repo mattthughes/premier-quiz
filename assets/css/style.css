@@ -283,6 +283,7 @@ main {
     align-self: center;
     text-decoration: none;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 /* Footer styles */
@@ -542,6 +543,10 @@ footer a {
         position: relative;
         width: 88vw;
         left: 90px;
+    }
+
+    .error-btn:hover {
+        color: #04a777;
     }
 
     footer {

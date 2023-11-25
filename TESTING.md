@@ -162,60 +162,8 @@ Start button|When start button clicked show questions and answers quiz intro|Cli
 Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
 Footer|When name clicked direct user to github page opening new tab|Clicked footer name|New tab opened github page loaded|Pass| 
  | | | | | 
-Instructions Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
-Start butto
 
-**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
-:-----:|:-----:|:-----:|:-----:|:-----:
-Questions|When start button pressed question to be shown randomly|Clicked start and started quiz|Random question shown not repeating same question when refreshed|Pass
-Answer Buttons (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
-Answer Buttons|Allow user to select button of choice disabling all buttons after input showing the next button after|Clicked answer button|disabled all buttons next button appeared|Pass
-Answer Buttons(Correct answer)|Answer button to change colour to green, all buttons to be disabled,next button to appear|Clicked  answer button|Colour changed to green all buttons disabled, next button appeared|Pass
-Answer Buttons(Wrong answer)|Answer button to change colour to red, all buttons to be disabled,next button to appear|Clicked answer button|Colour changed to red, all buttons disabled,next button appeared|Pass
-Next Button|Show random question and answers, hide next button, restart button should appear|Clicked next button|Showed random questions and answers,next button hidden restart button appeared|Pass
-Next Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
-Restart Button|Restart button to reset the quiz score and question number, show random question,next, restart button hidden|clicked reset button|Question number,score reset shown random question with restart button, next button hidden|Pass
-Restart Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
-Question Number|Question number to increase by 1 when next button pressed|Clicked next button|Question number increased by 1|Pass
-Questions limit|10 questions to be shown in a random order not repeating once all 10 have been shown results screen to load|Answered all 10 questions|Questions shown in random order and results screen shown|Passn|When start button clicked show questions and answers quiz intro|Clicked button|Questions,answers appeared quiz intro hidden|Pass| 
-Start Button (Hover effect)|Buttons colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass| 
-Footer|Wh
-
-**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
-:-----:|:-----:|:-----:|:-----:|:-----:
-Score = 1|Good effort you 1 out of 10 press play to play again|Scored 1|Good effort you scored 1 out of 10 appeared with play button|Pass
-Play again button|Button to restart the quiz without refreshing page|Clicked button|Quiz restarted without refreshing page|Pass
-Play again button (Hover effect)|Colour to change to green when hovered over|Hovered over button|Colour changed to green|Pass
-Score = 2|Good effort you 2 out of 10 press play to play again|Scored 2|Good effort you scored 2 out of 10 appeared with play button|Pass
-Score = 3|Good effort you 3 out of 10 press play to play again|Scored 3|Good effort you scored 3 out of 10 appeared with play button|Pass
-Score = 4|You know alot about the Premier League you scored 4 out of 10 press play again to try again|Scored 4|You know alot about the Premier League you scored 4 out of 10 appeared with play button|Pass
-Score = 5|You know alot about the Premier League you scored 5 out of 10 press play again to try again|Scored 5|You know alot about the Premier League you scored 5 out of 10 appeared with play button|Pass
-Score = 6|You know alot about the Premier League you scored 6 out of 10 press play again to try again|Scored 6|You know alot about the Premier League you scored 6 out of 10 appeared with play button|Pass
-Score = 7|You know alot about the Premier League you scored 7 out of 10 press play again to try again|Scored 7|You know alot about the Premier League you scored 7 out of 10 appeared with play button|Pass
-Score = 8|You know alot about the Premier League you scored 8 out of 10 press play again to try again|Scored 8|You know alot about the Premier League you scored 8 out of 10 appeared with play button|Pass
-Score = 9|You know alot about the Premier League you scored 9 out of 10 press play again to try again|Scored 9|You know alot about the Premier League you scored 9 out of 10 appeared with play button|Pass
-Score = 10|You scored 10 out of 10 congragulations you got every question correct press the next button to enter the raffle|Scored 10|You scored 10 out of 10 congragulations you got every question correct appeared with next button|Pass
-Next button|Next button to show the raffle and hide results text|Click Button|Raffle appeared and results hidden|Pass
-Next button (Hover effect)|Colour to change to green when hovered over|Hovered over button|Colour changed to green|Passen name clicked direct user to github page opening new tab|Clicked footer name|New tab opened github page loaded|Pass| 
- | | | | | 
-
-
-
-**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
-:-----:|:-----:|:-----:|:-----:|:-----:
-Name Input (empty|send alert fill in your name with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
-Name Input(numbers)|alert sent to fill in your name with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in name with correct format|Pass
-Name Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there surname correctly passing validation check for first name|Pass
-Surname Input (empty|send alert fill in your surname with the correct format|pressed submit leaving surname empty|alert sent telling user to fill in surname with correct format|Pass
-Surname Input(numbers)|alert sent to fill in your surname with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in surname with correct format|Pass
-Surname Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there contact number correctly passing validation check for surname|Pass
-Phone Input (empty)|send alert fill in your contact number with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
-Name Input(letters)|alert sent to fill in your contact number with the correct format|Entered letters pressed submit|alert sent telling user to fill in name with correct format|Pass
-Name Input(numbers)|No alert sent to user and to move onto next validation check|Enter Numbers pressed submit|Alert sent to user telling them to pick there favourite team correctly passing validation check for phone number |Pass
-Favourite Team input(Empty)|Send alert to pick your favourite team|Clicked submit with no input|Alert sent to user telling them to pick there favourite team|Pass
-Favourite Team input any team |Form to be submitted taking user to thank you screen|Clicked submit with any team|Thank you screen appeared along with play again button|Pass
-Submit button (incorrect or empty input fields)|Send alert stating all form elements must be filled in correctly|Clicked submit with empty or wrong format|Alert sent telling user the form must be filled out correctly and which ones were not|Pass
-Submit button (Hover effect)|Colour changed to green when hovered over|Hovered over button|Button colour changed to green |Pass`Game Area`
+`Game Area`
 
 **Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
 :-----:|:-----:|:-----:|:-----:|:-----:
@@ -252,6 +200,47 @@ Next button (Hover effect)|Colour to change to green when hovered over|Hovered o
 
 `Raffle enter`
 
+**Element**|**Expected outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Name Input (empty|send alert fill in your name with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
+Name Input(numbers)|alert sent to fill in your name with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in name with correct format|Pass
+Name Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there surname correctly passing validation check for first name|Pass
+Surname Input (empty|send alert fill in your surname with the correct format|pressed submit leaving surname empty|alert sent telling user to fill in surname with correct format|Pass
+Surname Input(numbers)|alert sent to fill in your surname with the correct format|Pressed submit with numbers inputted|alert sent telling user to fill in surname with correct format|Pass
+Surname Input(letters)|No alert sent to user and to move onto next validation check|Entered letters pressed submit|Alert sent to user telling them to input there contact number correctly passing validation check for surname|Pass
+Phone Input (empty)|send alert fill in your contact number with the correct format|pressed submit leaving name empty|alert sent telling user to fill in name with correct format|Pass
+Name Input(letters)|alert sent to fill in your contact number with the correct format|Entered letters pressed submit|alert sent telling user to fill in name with correct format|Pass
+Name Input(numbers)|No alert sent to user and to move onto next validation check|Enter Numbers pressed submit|Alert sent to user telling them to pick there favourite team correctly passing validation check for phone number |Pass
+Favourite Team input(Empty)|Send alert to pick your favourite team|Clicked submit with no input|Alert sent to user telling them to pick there favourite team|Pass
+Favourite Team input any team |Form to be submitted taking user to thank you screen|Clicked submit with any team|Thank you screen appeared along with play again button|Pass
+Submit button (incorrect or empty input fields)|Send alert stating all form elements must be filled in correctly|Clicked submit with empty or wrong format|Alert sent telling user the form must be filled out correctly and which ones were not|Pass
+Submit button (Hover effect)|Colour changed to green when hovered over|Hovered over button|Button colour changed to green |Pass
+
 `Thank you Page`
 
+**Element**|**Expected Outcome**|**Testing Performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Favourite Team =   Arsenal & Submit|Hi First Name and surname  we have recieved your message and if successful Arsenal will be in touch with the number you provided press play again |Submitted form and with input Arsenal|Thank you message showed with Arsenal and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =  Aston villa & Submit|Hi First Name and surname  we have recieved your message and if successful Aston Villa will be in touch with the number you provided press play again |Submitted form and with input Aston Villa|Thank you message showed with Aston Villa and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Bournemouth & Submit|Hi First Name and surname  we have recieved your message and if successful Bournemouth will be in touch with the number you provided press play again |Submitted form and with input Bournemouth|Thank you message showed with Bournemouth and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Brentford & Submit|Hi First Name and surname  we have recieved your message and if successful Brentford will be in touch with the number you provided press play again |Submitted form and with input Brentford|Thank you message showed with Brentford and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Brighton & Submit|Hi First Name and surname  we have recieved your message and if successful Brighton will be in touch with the number you provided press play again |Submitted form and with input Brighton|Thank you message showed with Brighton and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Burnley & Submit|Hi First Name and surname  we have recieved your message and if successful  Burnley will be in touch with the number you provided press play again |Submitted form and with input Burnley|Thank you message showed with Burnley and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Chelsea & Submit|Hi First Name and surname  we have recieved your message and if successful  Chelsea  will be in touch with the number you provided press play again |Submitted form and with input Chelsea|Thank you message showed with Chelsea and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Crystal Palace & Submit|Hi First Name and surname  we have recieved your message and if successful Crystal Palace will be in touch with the number you provided press play again |Submitted form and with input Crystal Palace|Thank you message showed with Crystal Palace and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =    Everton & Submit|Hi First Name and surname  we have recieved your message and if successful Everton will be in touch with the number you provided press play again |Submitted form and with input Everton|Thank you message showed with Everton and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =     Fulham & Submit|Hi First Name and surname  we have recieved your message and if successful Fulham will be in touch with the number you provided press play again |Submitted form and with input Fulham|Thank you message showed with Fulham and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =      Liverpool & Submit|Hi First Name and surname  we have recieved your message and if successful Liverpool will be in touch with the number you provided press play again |Submitted form and with input Liverpool|Thank you message showed with Liverpool and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =     Luton town& Submit|Hi First Name and surname  we have recieved your message and if successful Luton Town  will be in touch with the number you provided press play again |Submitted form and with input Luton Town|Thank you message showed with Luton Town and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =     Man City & Submit|Hi First Name and surname  we have recieved your message and if successful Man City will be in touch with the number you provided press play again |Submitted form and with input Man City|Thank you message showed with Man City and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =    Man Utd & Submit|Hi First Name and surname  we have recieved your message and if successful Man Utd will be in touch with the number you provided press play again |Submitted form and with input Man Utd|Thank you message showed with Man Utd and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =    Newcastle & Submit|Hi First Name and surname  we have recieved your message and if successful Newcastle will be in touch with the number you provided press play again |Submitted form and with input Newcastle|Thank you message showed with Newcastle and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =  Nottingham Forest & Submit|Hi First Name and surname  we have recieved your message and if successful Nottingham Forest will be in touch with the number you provided press play again |Submitted form and with input Nottingham Forest|Thank you message showed with Nottingham Forest and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team = Sheffield Utd & Submit|Hi First Name and surname  we have recieved your message and if successful Sheffield Utd will be in touch with the number you provided press play again |Submitted form and with input Sheffield Utd|Thank you message showed with Sheffield Utd and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   Tottenham Hotspur & Submit|Hi First Name and surname  we have recieved your message and if successful Tottenham will be in touch with the number you provided press play again |Submitted form and with input Tottenham|Thank you message showed with Tottenham and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =  West Ham & Submit|Hi First Name and surname  we have recieved your message and if successful West Ham will be in touch with the number you provided press play again |Submitted form and with input West Ham|Thank you message showed with West Ham and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =  Wolves & Submit|Hi First Name and surname  we have recieved your message and if successful Wolves will be in touch with the number you provided press play again |Submitted form and with input Wolves|Thank you message showed with Wolves and firstname,surname,contact inputs play again button appeared|Pass
+Favourite Team =   None & Submit|Hi First Name and surname  we have recieved your message if you would like to play the quiz again press play again |Submitted form and with input None|Thank you message showed with firstname,surname inputs, play again button appeared|Pass
+Play Again button|Restart the quiz hide the thank you screen and show question|Clicked button|Quiz restarted questions shown and all buttons restored to default behaviour thank you section hidden|Pass
+Play Again button (Hover effect)|Colour changed to green when hovered over|Hovered over button|Button colour changed to green |Pass
 `Error 404 page`
