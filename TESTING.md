@@ -2,6 +2,8 @@
 
 ![Responsivness logo](docs/wireframes/responsive-premier-quiz.png)
 
+Welcome to the Premier League Greatest Facts quiz testing results, in this file you will see how each and every element of the quiz was tested to ensure each element worked as intended.
+
 ## CONTENTS
 
 - [Premier League Greatest Facts Testing](#premier-league-greatest-facts-testing)
@@ -92,15 +94,24 @@
 
 #### Mobile Lighthouse results
 
+
 #### Index page Mobile Lighthouse Testing
 
+![Index Quiz lighthouse mobile](docs/wireframes/lighthouse-mobile-quiz.png)
+
 #### Error 404 page Mobile Lighthouse Testing
+
+![Error Quiz lighthouse mobile](docs/wireframes/mobile-error-quiz-lighthouse.png)
 
 #### Desktop Lighthouse results
 
 #### Index page Desktop Lighthouse Testing
 
+![Index Quiz lighthouse desktop](docs/wireframes/lighthouse-desktop-quiz.png)
+
 #### Error 404 page Desktop Lighthouse Testing
+
+![Error Quiz lighthouse desktop](docs/wireframes/error-desktop-lighthouse.png)
 
 ### Wave Report 
 
@@ -109,6 +120,8 @@
 ![Index page wave testing](docs/wireframes/wave-report-quiz.png)
 
 #### Error 404 page Wave Report
+
+![Error page wave testing](docs/wireframes/error-404-wave-report-quiz.png)
 
 ### Manual Testing 
 
@@ -243,4 +256,10 @@ Favourite Team =  Wolves & Submit|Hi First Name and surname  we have recieved yo
 Favourite Team =   None & Submit|Hi First Name and surname  we have recieved your message if you would like to play the quiz again press play again |Submitted form and with input None|Thank you message showed with firstname,surname inputs, play again button appeared|Pass
 Play Again button|Restart the quiz hide the thank you screen and show question|Clicked button|Quiz restarted questions shown and all buttons restored to default behaviour thank you section hidden|Pass
 Play Again button (Hover effect)|Colour changed to green when hovered over|Hovered over button|Button colour changed to green |Pass
+
 `Error 404 page`
+
+**Element**|**Expected Outcome**|**Testing performed**|**Result**|**Pass/Fail**
+:-----:|:-----:|:-----:|:-----:|:-----:
+Go Back button|Return user to index.html home page|Pressed back button|sent user back to index.html home page |Pass
+Go Back Button(Hover Effect)|Colour changed to green when hovered over|Hovered over button|Colour changed to green |Pass
