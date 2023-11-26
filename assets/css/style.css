@@ -391,6 +391,8 @@ footer a {
 
     .error-404 {
         position: relative;
+        width: 75vw;
+        left: 90px;
     }
 
     .error-btn {
@@ -538,15 +540,17 @@ footer a {
         left: 250px;
     }
 
+    .error-btn:hover {
+        color: #04a777;
+    }
+
+    footer {
+        text-align: left;
+    }
+
 }
 
-.error-btn:hover {
-    color: #04a777;
-}
 
-footer {
-    text-align: left;
-}
 
 /* Media query for larger desktops */
 @media screen and (min-width: 1500px) {
