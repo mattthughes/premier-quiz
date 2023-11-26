@@ -194,7 +194,7 @@ function showResults() {
     resultsBtn.classList.remove("hide");
     resultsBtn.addEventListener("click", runGame);
     if (score <= 3) {
-        resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length}. <br> Press play again to try again.`;
+        resultsText.innerHTML = `Good effort you scored <br> ${score} out of ${questions.length}. <br> Press play again to try again.`;
         resultsBtn.innerHTML = "Play Again";
     } else if (score <= 9) {
         resultsText.innerHTML = `You know alot about the Premier League you scored ${score} out of ${questions.length}. <br> Press play again to try again!`;
