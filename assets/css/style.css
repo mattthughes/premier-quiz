@@ -409,6 +409,7 @@ footer a {
         margin-bottom: 30px;
     }
 }
+
 /* Media query for larger tablets and small laptops */
 @media screen and (min-width: 1000px) {
 
@@ -559,6 +560,7 @@ footer a {
     }
 
 }
+
 /* Media query for laptops */
 @media screen and (min-width: 1400px) {
     .error-404 {
