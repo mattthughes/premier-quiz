@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     width: fit-content;
     font-family: "arimo", "san-serif";
-    color: #00000000;
+    color: #000000;
 }
 
 .heading a {
@@ -158,7 +158,8 @@ main {
 }
 
 /** Results screen styles **/
-#results {lor: #ffdead;
+#results {
+    background-color: #ffdead;
     padding: 20px;
     text-align: center;
     margin: 5px;
@@ -419,7 +420,8 @@ footer a {
         width: 60vw;
         left: 190px;
     }
-190}
+
+}
 
 /* Media query for smaller desktop devices */
 @media screen and (min-width: 1200px) {
@@ -536,26 +538,24 @@ footer a {
         position: relative;
     }
 
-#
-
     .thank-you-none {
         left: 250px;
-    }        left: 250px;
     }
 
-    .error-404 {
-        position: relative;
-        width: 88vw;
-        left: 90px;
-    }
+}
 
-    .error-btn:hover {
-        color: #04a777;
-    }
+.error-404 {
+    position: relative;
+    width: 88vw;
+    left: 90px;
+}
 
-    footer {
-        text-align: left;
-    }
+.error-btn:hover {
+    color: #04a777;
+}
+
+footer {
+    text-align: left;
 }
 
 /* Media query for larger desktops */
