@@ -23,6 +23,9 @@ Premier League greatest facts is a quiz designed around the best league in the w
       - [Desktop](#desktop)
   - [Key Features](#key-features)
     - [Favicon](#favicon)
+    - [Quiz Intro](#quiz-intro)
+      - [Quiz Intro Mobile view](#quiz-intro-mobile-view)
+      - [Quiz Intro Desktop view](#quiz-intro-desktop-view)
     - [Questions](#questions)
       - [Questions Mobile view](#questions-mobile-view)
       - [Questions Desktop view](#questions-desktop-view)
@@ -149,6 +152,17 @@ I decided to go for the following font style for the headings, as like the headi
 
 ![Favicon view](docs/wireframes/favicon-quiz.png)
 
+### Quiz Intro 
+
+* This element will introduce the user to what to expect when loading the Quiz. Informing them about the chance of entering a raffle which gives a purpose to the quiz instantly.
+
+#### Quiz Intro Mobile view 
+
+![Mobile view Quiz Intro](docs/wireframes/quiz-intro-mobile.png)
+
+#### Quiz Intro Desktop view 
+
+![Desktop view Quiz Intro](docs/wireframes/quiz-intro-desktop.png)
 
 ### Questions 
 
@@ -248,19 +262,18 @@ I decided to go for the following font style for the headings, as like the headi
 
 #### Mobile all questions correct 
 
-![Mobile view all questions correct](docs/wireframes/join-raffle-mobile.png)
+![Mobile view all questions correct](docs/wireframes/score-all-correct-mobile.png)
 
 #### Desktop less than 3 score
 
 ![Desktop view less than 3](docs/wireframes/score-less-than-three-desktop.png)
-
 #### Desktop less than or 9 score
 
 ![Desktop view less than or equal to 9](docs/wireframes/score-less-than-nine-desktop.png)
 
 #### Desktop all questions correct
 
-![Desktop view all questions correct](docs/wireframes/join-raffle-dekstop.png)
+![Desktop view all questions correct](docs/wireframes/score-all-correct-desktop.png)
 
 ### Contact page
 

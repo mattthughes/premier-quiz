@@ -426,7 +426,6 @@ footer a {
 /* Media query for smaller desktop devices */
 @media screen and (min-width: 1200px) {
 
-
     /* Heading styling */
     h1 {
         font-size: 35px;
