@@ -58,20 +58,20 @@ function hideAnswers() {
     questionElement.classList.add("hide");
     nextButton.classList.add("hide");
 }
-/**Hidding  key elements */
+/**Hiding  key elements */
 function hideElements() {
     instructionsButton.classList.add("hide");
     quizIntro.classList.add("hide");
     restartBtn.classList.add("hide");
     quizElement.classList.add("hide");
 }
-/**Hidding and unhiding key elements */
+/**Hiding and unhiding key elements */
 function showInstructions() {
     instructionsTextElement.classList.remove("hide");
     instructionsTextElement.classList.add("quiz-instructions");
     hideElements();
 }
-/** Hidding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
+/** Hiding and unhiding key elements while also using the start quiz function to start when the start button is clicked */
 function runGame() {
     questionElement.classList.remove("hide");
     quizHeading.classList.add("game-heading");

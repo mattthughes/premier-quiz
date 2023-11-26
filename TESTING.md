@@ -42,6 +42,8 @@ Welcome to the Premier League Greatest Facts quiz testing results, in this file 
 
 #### Error 404 validation
 
+![Error 404 Page validation](docs/wireframes/error-404-validator-quiz.png)
+
 ### CSS Validation
 
 ![CSS quiz validation](docs/wireframes/css-validator-quiz.png)
