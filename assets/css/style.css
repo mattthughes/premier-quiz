@@ -399,7 +399,7 @@ footer a {
         margin-bottom: 30px;
     }
 }
-
+/* Media query for larger tablets and small laptops */
 @media screen and (min-width: 1000px) {
 
     body {
@@ -548,6 +548,13 @@ footer a {
         text-align: left;
     }
 
+}
+/* Media query for laptops */
+@media screen and (min-width: 1400px) {
+    .error-404 {
+        width: 80vw;
+        left: 120px;
+    }
 }
 
 /* Media query for larger desktops */
