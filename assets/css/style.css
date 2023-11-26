@@ -389,6 +389,16 @@ footer a {
         padding-top: 2px;
     }
 
+    #results {
+        position: relative;
+        left: 120px;
+    }
+
+    .thank-you-none {
+        position: relative;
+        left: 80px;
+    }
+
     .error-404 {
         position: relative;
         width: 75vw;
