@@ -78,7 +78,7 @@ export const questions = [
 
   {
     question:
-      "Who is the player with the most Substitutions in Premier League history?",
+      "Who is the player with the most substitutions in Premier League history?",
 
     answers: [
       { text: "Peter Crouch", correct: false },
@@ -102,7 +102,7 @@ export const questions = [
 
   {
     question:
-      "Which team did not win a single away game in a single Premier League season",
+      "Which team did not win a single away game in a single Premier League season?",
 
     answers: [
       { text: "Stoke City", correct: false },

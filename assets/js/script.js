@@ -194,15 +194,15 @@ function showResults() {
     resultsBtn.classList.remove("hide");
     resultsBtn.addEventListener("click", runGame);
     if (score <= 3) {
-        resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length} Press play again to try again!`;
+        resultsText.innerHTML = `Good effort you scored ${score} out of ${questions.length}. <br> Press play again to try again.`;
         resultsBtn.innerHTML = "Play Again";
     } else if (score <= 9) {
-        resultsText.innerHTML = `You know alot about the Premier league you scored ${score} out of ${questions.length} Press play again to try again!`;
+        resultsText.innerHTML = `You know alot about the Premier League you scored ${score} out of ${questions.length}. <br> Press play again to try again!`;
         resultsBtn.innerHTML = "Play Again";
     } else if (score > 9) {
-        resultsText.innerHTML = `You scored ${score} out of ${questions.length} Congratulations you got 
+        resultsText.innerHTML = `You scored ${score} out of ${questions.length}. <br> Congratulations you got 
         every question correct press the 
-        next button to enter the raffle!`;
+        next button to enter the raffle.`;
         resultsBtn.innerHTML = "Next";
         resultsBtn.addEventListener("click", joinRaffle);
     }
@@ -216,7 +216,7 @@ function validateFirstName() {
     if (/[A-z][^0-9]/.test(document.forms.raffle.fname.value)) {
         return true;
     } else {
-        alert('Please fill in your first name with the correct format');
+        alert('Please fill in your First Name with the correct format.');
         return false;
     }
 }
@@ -224,14 +224,14 @@ function validateLastName() {
     if (/[A-z][^0-9]/.test(document.forms.raffle.surname.value)) {
         return true;
     } else {
-        alert('Please fill in your surname with the correct format');
+        alert('Please fill in your Surname with the correct format.');
     }
 }
 function validateContact() {
     if (/[0-9][^A-z]/.test(document.forms.raffle.contact.value)) {
         return true;
     } else {
-        alert('Incorrect contact number please fill in your contact number with the correct format');
+        alert('Incorrect contact number please fill in your contact number with the correct format.');
         return false;
     }
 }
@@ -288,11 +288,11 @@ function raffleEnd(event) {
     submitButton.addEventListener('click', handleForm);
     if (favouriteTeam.value === "None") {
         thankYou.classList.add("thank-you-none");
-        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value} , 
+        thankYouText.innerHTML = `Thank you for taking part in the quiz ${firstName.value} ${surname.value}. <br>
         If you would like to take part again in the quiz just simply press the back button.`;
     } else {
-        thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value} , 
-    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided ,
+        thankYouText.innerHTML = `Thank you for entering the raffle ${firstName.value} ${surname.value}. <br> 
+    We have recieved your message and if you are successful ${favouriteTeam.value} will be in touch with the phone number ${phoneNumber.value} you provided. <br>
     If you would like to take the quiz again simply just press the back button.`;
         thankYou.classList.add("thank-you");
     }
