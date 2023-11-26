@@ -113,7 +113,7 @@ Welcome to the Premier League Greatest Facts quiz testing results, in this file 
 
 #### Error 404 page Desktop Lighthouse Testing
 
-![Error Quiz lighthouse desktop](docs/wireframes/error-desktop-lighthouse.png)
+![Error Quiz lighthouse desktop](docs/wireframes/desktop-quiz-error-lighthouse.png)
 
 ### Wave Report 
 

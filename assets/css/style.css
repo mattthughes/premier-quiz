@@ -391,9 +391,7 @@ footer a {
 
     .error-404 {
         position: relative;
-        left: 70px;
         top: 100px;
-        width: 80vw;
     }
 
     .error-btn {
@@ -546,7 +544,7 @@ footer a {
 .error-404 {
     position: relative;
     width: 88vw;
-    left: 90px;
+    left: 130px;
 }
 
 .error-btn:hover {
