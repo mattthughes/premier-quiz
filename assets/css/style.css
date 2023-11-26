@@ -560,7 +560,7 @@ footer a {
 /* Media query for larger desktops */
 @media screen and (min-width: 1600px) {
     .instructions-text {
-        width: 1500px;
+        width: 1820px;
     }
 
     #results {
