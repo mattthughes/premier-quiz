@@ -90,6 +90,8 @@ Welcome to the Premier League Greatest Facts quiz testing results, in this file 
 
 ### Known Bugs
 
+* When pressing the submit button, if all validation is correct the form will not submit until pressing the submit button a second time.
+
 ### Lighthouse testing 
 
 #### Mobile Lighthouse results
